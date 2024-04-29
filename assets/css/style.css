@@ -5,9 +5,18 @@
     box-sizing: border-box;
 }
 
+/* Game area */
+#game-area {
+    display: none;
+}
+
+/* color box */
 #color-box {
     border: solid;
     border-color: black;
     width: 30%;
     height: 100px;
 }
+
+
+
