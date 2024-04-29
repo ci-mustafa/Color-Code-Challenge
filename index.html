@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Meta tags for search engine -->
-    <meta name="description"
-        content="Guess hexa color code, Color code challange.">
+    <meta name="description" content="Guess hexa color code, Color code challange.">
     <meta name="keywords" content="Color code challange, Guessing hexa color code.">
 
     <!-- Css link -->
@@ -14,7 +13,22 @@
     <title>Hexa Guesser</title>
 </head>
 <body>
+    <section id="game-section">
+        <div id="start-guess">
+            <button id="start-button">Start</button>
+        </div>
+        <div id="game-area">
+            <h1 id="game-area-heading">Welcome To Color Box Guessing!</h1>
+            <br>
+            <p id="game-area-p">Can you guess the color of the box? Type in the hexadecimal color code and see if you can get it right! Good luck!</p>
+            <div id="color-box">
 
+            </div>
+            <input type="text" id="guess-box" required>
+            <br>
+            <button id="submit">Guess</button>
+        </div>
+    </section>
     <script src="assets/js/script.js"></script>
 </body>
 
