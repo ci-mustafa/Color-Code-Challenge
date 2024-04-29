@@ -39,6 +39,22 @@ function generateColor() {
     
 }
 
+/**
+ * Function to get user input
+ * 
+*/
+function getUserGuess () {
+    let userGuess = document.getElementById("guess-box").textContent;
+    return userGuess;
+}
+
+/**
+ * Function to check user Guess against generated random color
+ */
+
+
+
+
 
 
 
