@@ -7,7 +7,7 @@
 
 /* Game area */
 #game-area {
-    display: none;
+    display: none; /* Make game area by default display to none */
 }
 
 /* color box */
