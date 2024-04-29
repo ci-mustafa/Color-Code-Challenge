@@ -1,7 +1,13 @@
 /* Override default browser style */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+#color-box {
+    border: solid;
+    border-color: black;
+    width: 30%;
+    height: 100px;
 }
