@@ -10,10 +10,37 @@ document.addEventListener("DOMContentLoaded", function() {
     
 })
 
+/**
+* Function to start the game and give the box a random color
+ */
 function startGame() {
     // show game area div
     document.getElementById("game-area").style.display = "block";
     // hide start button
     document.getElementById("start-button").style.display = "none";
+    // generate a random color
+    document.getElementById("color-box").style.backgroundColor = generateColor();
 }
+
+/**
+ * Function to generate a random color using color list codes and return it
+ */
+function generateColor() {
+    let startCode = "#";
+    let colorCodeLength = 6;
+    let generatePeriod = 0;
+    while (generatePeriod < colorCodeLength) {
+        let indexColorCode = Math.floor(Math.random() * ColorCodeList.length);
+        startCode += ColorCodeList[indexColorCode];
+        generatePeriod ++;
+
+    }
+    return startCode;
+    
+}
+
+
+
+
+
 
