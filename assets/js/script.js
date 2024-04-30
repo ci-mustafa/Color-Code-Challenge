@@ -95,18 +95,6 @@ function checkUserGuess() {
             valiText.style.display = "none"; // Hide the validation message if it was displayed
         }
 
-        // check if attempts are exhausted
-        if (attempts === 1) {
-            startGame();
-            let scoreElement = document.getElementById("score");
-            let pInfo = document.getElementById("guess-step");
-            let attemptPara = document.getElementById("attempt-p");
-            scoreElement.textContent = 0;
-            pInfo.style.display = "none";
-            attemptPara.style.display = "none";
-            document.getElementById("guess-box").value = "";
-            return; // Exit the function if attempts are 0
-        }
 
         // check user guess against generated color
         if (userGuess === generatedColor) {
@@ -116,7 +104,25 @@ function checkUserGuess() {
         } else {
             // attempt decrement
             attempts--;
-
+            console.log(attempts);
+            // check if attempts are exhausted
+            if (attempts === 0) {
+                // if attempts is 0 and userGuess is equal to generetedColor, increase score and call startGame function
+                if (userGuess === generatedColor) {
+                    increaseScore();
+                    startGame();
+                }
+                // if attempts is 0 and userGuess is not equal to generetedColor, call startGame fun and make score to 0
+                startGame();
+                let scoreElement = document.getElementById("score");
+                let pInfo = document.getElementById("guess-step");
+                let attemptPara = document.getElementById("attempt-p");
+                scoreElement.textContent = 0;
+                pInfo.style.display = "none";
+                attemptPara.style.display = "none";
+                document.getElementById("guess-box").value = "";
+                return; // Exit the function if attempts are 0
+            }
             // array to store correct guesses
             let correctGuesses = [];
             for (let i = 0; i < userGuess.length; i++) {
