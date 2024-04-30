@@ -5,7 +5,7 @@ const ColorCodeList = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b
 let generatedColor;
 
 // wait the DOM to finish loading before running the game
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     let startButton = document.getElementById("start-button");
     // add click event listener for start button to run a function
     startButton.addEventListener("click", startGame);
@@ -50,14 +50,25 @@ function getUserGuess() {
  */
 function checkUserGuess() {
     // get submit button and add a click event listener to it
-    document.getElementById("submit").addEventListener("click", function() {
+    document.getElementById("submit").addEventListener("click", function () {
         let userGuess = getUserGuess();
         if (userGuess === generatedColor) {
+            increaseScore(); // calling increaseScore function to increase score
             startGame(); // generate a new color
+            document.getElementById("guess-box").value = "";
         } else {
             alert("Oops! That's not the correct color. Try again!");
         }
     });
 }
 
+/**
+ * Function to increase score
+ */
+function increaseScore() {
+    let scoreElement = document.getElementById("score");
+    let score = parseInt(scoreElement.textContent);
+    score += 1;
+    scoreElement.textContent = score;
+}
 checkUserGuess();
