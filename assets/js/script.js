@@ -76,7 +76,7 @@ function checkUserGuess() {
             startGame(); // generate a new color
             document.getElementById("guess-box").value = "";
         } else {
-            alert("Oops! That's not the correct color. Try again!");
+            // alert("Oops! That's not the correct color. Try again!");
 
         }
     });
