@@ -104,7 +104,6 @@ function checkUserGuess() {
         } else {
             // attempt decrement
             attempts--;
-            console.log(attempts);
             // check if attempts are exhausted
             if (attempts === 0) {
                 // if attempts is 0 and userGuess is equal to generetedColor, increase score and call startGame function
