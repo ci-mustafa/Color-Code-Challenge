@@ -38,6 +38,12 @@ function startGame() {
 
     // change attempts to defualt
     attempts = 7;
+
+    // access validation text
+    let valiText = document.getElementById("validation-text");
+    if (valiText.style.display === "block") {
+        valiText.style.display = "none";
+    }
 }
 
 /**
@@ -82,6 +88,11 @@ function checkUserGuess() {
             let valiText = document.getElementById("validation-text");
             valiText.textContent = "Color code must start with #";
             valiText.style.display = "block";
+        } else {
+            // Clear any previous validation messages and hide them
+            let valiText = document.getElementById("validation-text");
+            valiText.textContent = ""; // Clear the text content
+            valiText.style.display = "none"; // Hide the validation message if it was displayed
         }
 
         // check if attempts are exhausted
