@@ -51,13 +51,33 @@ function getUserGuess() {
 function checkUserGuess() {
     // get submit button and add a click event listener to it
     document.getElementById("submit").addEventListener("click", function () {
+
+        // store input user in a variable
         let userGuess = getUserGuess();
+
+        // validate user input
+        if (userGuess.length === 0) {
+            let valiText = document.getElementById("validation-text");
+            valiText.textContent = "Color code cannot be empty";
+            valiText.style.display = "block";
+        } else if (userGuess.length < 7 || userGuess.length > 7) {
+            let valiText = document.getElementById("validation-text");
+            valiText.textContent = "Ensure color code length is 7";
+            valiText.style.display = "block";
+        } else if (! userGuess.startsWith("#")) {
+            let valiText = document.getElementById("validation-text");
+            valiText.textContent = "Color code must start with #";
+            valiText.style.display = "block";
+        }
+
+        // check user guess against generated color
         if (userGuess === generatedColor) {
             increaseScore(); // calling increaseScore function to increase score
             startGame(); // generate a new color
             document.getElementById("guess-box").value = "";
         } else {
             alert("Oops! That's not the correct color. Try again!");
+
         }
     });
 }
@@ -72,14 +92,5 @@ function increaseScore() {
     scoreElement.textContent = score;
 }
 
-/**
- * Function to validate user input
- */
-function validateUserInput() {
-    let userInput = document.getElementById("guess-box").value;
-    if (userInput.length < 7) {
-
-    }
-}
 // calling checkUserGuess function
 checkUserGuess();
