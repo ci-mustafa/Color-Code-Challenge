@@ -129,8 +129,7 @@ function checkUserGuess() {
                 // attempt decrement
                 attempts--;
             }
-            
-            // array to store correct guesses
+            // list to store correct guesses
             let correctGuesses = [];
             for (let i = 0; i < userGuess.length; i++) {
                 if (generatedColor[i] === userGuess[i]) {
