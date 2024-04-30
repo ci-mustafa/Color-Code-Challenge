@@ -72,5 +72,14 @@ function increaseScore() {
     scoreElement.textContent = score;
 }
 
+/**
+ * Function to validate user input
+ */
+function validateUserInput() {
+    let userInput = document.getElementById("guess-box").value;
+    if (userInput.length < 7) {
+
+    }
+}
 // calling checkUserGuess function
 checkUserGuess();

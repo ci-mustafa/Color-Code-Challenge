@@ -18,5 +18,10 @@
     height: 100px;
 }
 
+/* validation paragraph */
+#validation-text {
+    display: none;
+}
+
 
 
