@@ -23,5 +23,11 @@
     display: none;
 }
 
+/* attempt and guess step paragraphs */
+/* make them by default hidden */
+.hidden-p {
+    display: none;
+}
+
 
 
