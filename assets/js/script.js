@@ -104,24 +104,7 @@ function checkUserGuess() {
         } else {
             // attempt decrement
             attempts--;
-            // check if attempts are exhausted
-            if (attempts === 0) {
-                // if attempts is 0 and userGuess is equal to generetedColor, increase score and call startGame function
-                if (userGuess === generatedColor) {
-                    increaseScore();
-                    startGame();
-                }
-                // if attempts is 0 and userGuess is not equal to generetedColor, call startGame fun and make score to 0
-                startGame();
-                let scoreElement = document.getElementById("score");
-                let pInfo = document.getElementById("guess-step");
-                let attemptPara = document.getElementById("attempt-p");
-                scoreElement.textContent = 0;
-                pInfo.style.display = "none";
-                attemptPara.style.display = "none";
-                document.getElementById("guess-box").value = "";
-                return; // Exit the function if attempts are 0
-            }
+
             // array to store correct guesses
             let correctGuesses = [];
             for (let i = 0; i < userGuess.length; i++) {
@@ -146,9 +129,23 @@ function checkUserGuess() {
                 pIndex.textContent += correctGuesses[i][0] + ", ";
                 pValue.textContent += correctGuesses[i][1] + ", ";
             }
+
             attemptValue.textContent = attempts;
             attemptPara.style.display = "block";
             pInfo.style.display = "block";
+
+            // check if attempts are exhausted
+            if (attempts === 0) {
+                // if attempts is 0 and userGuess is equal to generatedColor, increase score and call startGame function
+                if (userGuess === generatedColor) {
+                    increaseScore();
+                }
+                // Call startGame if attempts are 0, regardless of user's guess
+                startGame();
+                let scoreElement = document.getElementById("score");
+                scoreElement.textContent = 0;
+                document.getElementById("guess-box").value = "";
+            }
 
 
         }
