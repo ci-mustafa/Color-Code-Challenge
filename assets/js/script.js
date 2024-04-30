@@ -67,6 +67,46 @@ function getUserGuess() {
 }
 
 /**
+ * Function to increase score
+ */
+function increaseScore() {
+    let scoreElement = document.getElementById("score");
+    let score = parseInt(scoreElement.textContent);
+    score += 1;
+    scoreElement.textContent = score;
+}
+/**
+ * Function to validate userinput
+ */
+function validateUserInput() {
+    // store input user in a variable
+    let userGuess = getUserGuess();
+    // validate user input
+    if (userGuess.length === 0) {
+        let valiText = document.getElementById("validation-text");
+        valiText.textContent = "Color code cannot be empty";
+        valiText.style.display = "block";
+        return false;
+    } else if (userGuess.length !== 7) {
+        let valiText = document.getElementById("validation-text");
+        valiText.textContent = "Ensure color code length is 7";
+        valiText.style.display = "block";
+        return false;
+    } else if (!userGuess.startsWith("#")) {
+        let valiText = document.getElementById("validation-text");
+        valiText.textContent = "Color code must start with #";
+        valiText.style.display = "block";
+        return false;
+    } else {
+        // Clear any previous validation messages and hide them
+        let valiText = document.getElementById("validation-text");
+        valiText.textContent = ""; // Clear the text content
+        valiText.style.display = "none"; // Hide the validation message if it was displayed
+        return true;
+    }
+}
+
+/**
  * Function to check user Guess against generated random color
  */
 function checkUserGuess() {
@@ -75,26 +115,8 @@ function checkUserGuess() {
 
         // store input user in a variable
         let userGuess = getUserGuess();
-        // validate user input
-        if (userGuess.length === 0) {
-            let valiText = document.getElementById("validation-text");
-            valiText.textContent = "Color code cannot be empty";
-            valiText.style.display = "block";
-        } else if (userGuess.length < 7 || userGuess.length > 7) {
-            let valiText = document.getElementById("validation-text");
-            valiText.textContent = "Ensure color code length is 7";
-            valiText.style.display = "block";
-        } else if (!userGuess.startsWith("#")) {
-            let valiText = document.getElementById("validation-text");
-            valiText.textContent = "Color code must start with #";
-            valiText.style.display = "block";
-        } else {
-            // Clear any previous validation messages and hide them
-            let valiText = document.getElementById("validation-text");
-            valiText.textContent = ""; // Clear the text content
-            valiText.style.display = "none"; // Hide the validation message if it was displayed
-        }
-
+        // call validateuserinput function
+        validateUserInput();
 
         // check user guess against generated color
         if (userGuess === generatedColor) {
@@ -102,9 +124,12 @@ function checkUserGuess() {
             startGame(); // generate a new color
             document.getElementById("guess-box").value = "";
         } else {
-            // attempt decrement
-            attempts--;
-
+            // if validateuserinput function return true perform decrement
+            if (validateUserInput()) {
+                // attempt decrement
+                attempts--;
+            }
+            
             // array to store correct guesses
             let correctGuesses = [];
             for (let i = 0; i < userGuess.length; i++) {
@@ -150,16 +175,6 @@ function checkUserGuess() {
 
         }
     });
-}
-
-/**
- * Function to increase score
- */
-function increaseScore() {
-    let scoreElement = document.getElementById("score");
-    let score = parseInt(scoreElement.textContent);
-    score += 1;
-    scoreElement.textContent = score;
 }
 
 // calling checkUserGuess function
