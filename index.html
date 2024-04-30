@@ -30,13 +30,18 @@
         <div id="game-area">
             <h1 id="game-area-heading">Welcome To Color Box Guessing!</h1>
             <br>
-            <p id="game-area-p">Can you guess the color of the box? Type in the hexadecimal color code and see if you
+            <p class="game-area-p">Can you guess the color of the box? Type in the hexadecimal color code and see if you
                 can get it right! Good luck!</p>
+            <ul id="hexa-code-rolls">
+                <li>Ensure hexadecimal color codes start with '#'.</li>
+                <li>Hexadecimal color codes must be 7 characters in length, including the '#'.</li>
+                <li>A hexadecimal color code consists of numbers (0-9) and letters (a-f).</li>
+            </ul>
             <div id="color-box">
 
             </div>
-            <p id="guess-step" class="hidden-p">Correct Guesses, Code at index of: <span id="index"></span> with value: <span
-                    id="value"></span></p>
+            <p id="guess-step" class="hidden-p">Correct Guesses, Code at index of: <span id="index"></span> with value:
+                <span id="value"></span></p>
             <p id="attempt-p" class="hidden-p">You have: <span id="attempt"></span> attempts.</p>
             <input type="text" id="guess-box" required>
             <br>
