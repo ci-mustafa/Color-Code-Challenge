@@ -27,6 +27,17 @@ function startGame() {
     generatedColor = generateColor();
     document.getElementById("color-box").style.backgroundColor = generatedColor;
     console.log(generatedColor);
+    // access guess-step paragraph and attemp-p paragraph
+    let pInfo = document.getElementById("guess-step");
+    let attemptPara = document.getElementById("attempt-p");
+    // if display prop is block change it to none
+    if (pInfo.style.display === "block" || attemptPara.style.display === "block") {
+        pInfo.style.display = "none";
+        attemptPara.style.display = "none";
+    }
+
+    // change attempts to defualt
+    attempts = 7;
 }
 
 /**
@@ -93,7 +104,7 @@ function checkUserGuess() {
             document.getElementById("guess-box").value = "";
         } else {
             // attempt decrement
-            attempts --;
+            attempts--;
 
             // array to store correct guesses
             let correctGuesses = [];
