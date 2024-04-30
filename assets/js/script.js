@@ -71,4 +71,6 @@ function increaseScore() {
     score += 1;
     scoreElement.textContent = score;
 }
+
+// calling checkUserGuess function
 checkUserGuess();
