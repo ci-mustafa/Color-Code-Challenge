@@ -5,6 +5,16 @@
     box-sizing: border-box;
 }
 
+/* body */
+body {
+    background-color: #7ed5ea;
+}
+
+/* game section */
+#game-section {
+    text-align: center;
+}
+
 /* Game area */
 #game-area {
     display: none; /* Make game area by default display to none */
