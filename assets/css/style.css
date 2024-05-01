@@ -5,22 +5,45 @@
     box-sizing: border-box;
 }
 
+/* Define a keyframe animation named 'gradientAnimation' */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 /* body */
+/* Apply the gradient and animation to the body */
 body {
-    background: linear-gradient(to right, 
-        red,       /* Red */
-        orange,    /* Orange */
-        yellow,    /* Yellow */
-        green,     /* Green */
-        blue,      /* Blue */
-        indigo,    /* Indigo */
-        violet);   /* Violet */
+    /* Create a linear gradient with colorful colors */
+    background: linear-gradient(to right,
+            red,
+            orange,
+            yellow,
+            green,
+            blue,
+            indigo,
+            violet);
+
+    /* Enlarge the background area to allow space for movement */
+    background-size: 400% 400%;
+    /* Apply the animation with a duration of 10 seconds*/
+    animation: gradientAnimation 10s ease infinite;
 }
 
 /* game section */
 #game-section {
     text-align: center;
 }
+
 /* start div */
 #start-guess {
     background-color: #4b9fe1;
@@ -54,9 +77,11 @@ body {
     border-radius: 20px;
     box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.8);
 }
+
 /* Game area */
 #game-area {
-    display: none; /* Make game area by default display to none */
+    display: none;
+    /* Make game area by default display to none */
 }
 
 /* color box */
@@ -77,6 +102,3 @@ body {
 .hidden-p {
     display: none;
 }
-
-
-
