@@ -25,6 +25,13 @@ body {
     border-radius: 20px;
     box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.9);
 }
+
+/* start heading */
+#start-heading {
+    font-family: "Chakra Petch", sans-serif;
+    margin: 10px;
+    color: #0f2557;
+}
 /* Game area */
 #game-area {
     display: none; /* Make game area by default display to none */
