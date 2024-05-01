@@ -14,6 +14,17 @@ body {
 #game-section {
     text-align: center;
 }
+/* start div */
+#start-guess {
+    background-color: #4b9fe1;
+    margin-top: 60%;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: solid;
+    border-color: #63bce5;
+    border-radius: 20px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.9);
+}
 /* Game area */
 #game-area {
     display: none; /* Make game area by default display to none */
