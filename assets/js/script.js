@@ -21,8 +21,8 @@ document.addEventListener("DOMContentLoaded", function () {
 function startGame() {
     // show game area div
     document.getElementById("game-area").style.display = "block";
-    // hide start button
-    document.getElementById("start-button").style.display = "none";
+    // hide start screen
+    document.getElementById("start-guess").style.display = "none";
     // generate a random color
     generatedColor = generateColor();
     document.getElementById("color-box").style.backgroundColor = generatedColor;
