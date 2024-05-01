@@ -32,6 +32,18 @@ body {
     margin: 10px;
     color: #0f2557;
 }
+
+/* start button */
+#start-button {
+    font-family: "Chakra Petch", sans-serif;
+    font-size: larger;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    height: 30px;
+    width: 50%;
+    background-color: #150734;
+    color: aquamarine;
+}
 /* Game area */
 #game-area {
     display: none; /* Make game area by default display to none */
