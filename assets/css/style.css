@@ -7,7 +7,14 @@
 
 /* body */
 body {
-    background-color: #7ed5ea;
+    background: linear-gradient(to right, 
+        red,       /* Red */
+        orange,    /* Orange */
+        yellow,    /* Yellow */
+        green,     /* Green */
+        blue,      /* Blue */
+        indigo,    /* Indigo */
+        violet);   /* Violet */
 }
 
 /* game section */
