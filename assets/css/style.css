@@ -82,6 +82,7 @@ body {
     text-align: left;
     margin-bottom: 10px;
     font-family: "Montserrat", sans-serif;
+    font-size: small;
     color: white;
 }
 
@@ -96,6 +97,7 @@ body {
 /* hexa code list rolls */
 #hexa-code-rolls {
     font-family: "Montserrat", sans-serif;
+    font-size: small;
     color: white;
     text-align: left;
     margin-bottom: 15px;
@@ -119,6 +121,7 @@ body {
 #validation-text {
     display: none;
     font-family: "Montserrat", sans-serif;
+    font-size: x-small;
     color: white;
     text-align: center;
     margin-top: 5px;
@@ -128,6 +131,7 @@ body {
 /* guess step paragraph */
 #guess-step {
     font-family: "Montserrat", sans-serif;
+    font-size: small;
     color: white;
     text-align: left;
     margin-bottom: 5px;
@@ -136,6 +140,7 @@ body {
 /* attempt paragraph */
 #attempt-p {
     font-family: "Montserrat", sans-serif;
+    font-size: small;
     color: white;
     text-align: center;
     margin-bottom: 5px;
