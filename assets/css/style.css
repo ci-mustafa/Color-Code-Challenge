@@ -92,6 +92,16 @@ body {
     text-align: left;
     margin-bottom: 5px;
 }
+
+/* hexa code list rolls */
+#hexa-code-rolls {
+    font-family: "Jersey 20", sans-serif;
+    color: white;
+    text-align: left;
+    margin-bottom: 15px;
+    margin-left: 25px;
+    list-style-type: square;
+}
 /* color box */
 #color-box {
     border: solid;
