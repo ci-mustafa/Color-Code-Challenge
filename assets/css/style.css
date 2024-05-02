@@ -5,23 +5,7 @@
     box-sizing: border-box;
 }
 
-/* Define a keyframe animation named 'gradientAnimation' */
-@keyframes gradientAnimation {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
 /* body */
-/* Apply the gradient and animation to the body */
 body {
     /* Create a linear gradient with colorful colors */
     background: linear-gradient(to right,
@@ -32,11 +16,6 @@ body {
             blue,
             indigo,
             violet);
-
-    /* Enlarge the background area to allow space for movement */
-    background-size: 400% 400%;
-    /* Apply the animation with a duration of 10 seconds*/
-    animation: gradientAnimation 10s ease infinite;
 }
 
 /* game section */
