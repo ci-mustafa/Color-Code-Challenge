@@ -128,6 +128,19 @@ function checkUserGuess() {
             if (validateUserInput()) {
                 // attempt decrement
                 attempts--;
+            } else {
+                // when submit button for second time pressed, make validation text color to black and change it's font size
+                document.getElementById("submit").addEventListener("click", function() {
+                    let valiText = document.getElementById("validation-text");
+                    valiText.style.fontSize = "10.5px";
+                    valiText.style.color = "black";
+                    // set a timeout to change font color and it's size to default
+                    setTimeout( function() {
+                        valiText.style.fontSize = "";
+                        valiText.style.color = "";
+                    }, 500)
+                })
+                
             }
             // list to store correct guesses
             let correctGuesses = [];
