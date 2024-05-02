@@ -151,3 +151,17 @@ body {
 .hidden-p {
     display: none;
 }
+
+/* userinput, guess box */
+#guess-box {
+    font-family:"Chakra Petch", sans-serif ;
+    border-color: #63bce5;
+    border-radius: 10px;
+    height: 30px;
+    margin-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.9);
+    color: white;
+    text-align: center;
+    font-size: large;
+}
