@@ -22,7 +22,7 @@ body {
 
 /* start div */
 #start-guess {
-    background-color: #4b9fe1;
+    background-color: rgba(255, 255, 255, 0.2);
     margin-top: 60%;
     margin-left: 10px;
     margin-right: 10px;
@@ -70,7 +70,7 @@ body {
     color: #150734;
     border: solid;
     border-radius: 20px;
-    border-color: wheat;
+    border-color: #63bce5;
     padding: 5px;
     background-color: rgba(255, 255, 255, 0.2);
     opacity: 0.8;
