@@ -165,3 +165,18 @@ body {
     text-align: center;
     font-size: large;
 }
+
+/* submit button */
+#submit {
+    font-family: "Chakra Petch", sans-serif;
+    font-size: larger;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    height: 30px;
+    width: 35%;
+    background-color: #150734;
+    color: aquamarine;
+    border: hidden;
+    border-radius: 20px;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.8);
+}
