@@ -133,6 +133,19 @@ body {
     margin-bottom: 5px;
 }
 
+/* attempt paragraph */
+#attempt-p {
+    font-family: "Jersey 20", sans-serif;
+    color: white;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+/* attempt value */
+#attempt {
+    color: black;
+}
+
 /* attempt and guess step paragraphs */
 /* make them by default hidden */
 .hidden-p {
