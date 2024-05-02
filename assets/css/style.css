@@ -118,6 +118,15 @@ body {
 /* validation paragraph */
 #validation-text {
     display: none;
+    font-family: "Jersey 20", sans-serif;
+    color: white;
+    text-align: center;
+    border: solid;
+    border-color: #63bce5;
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 3px;
 }
 
 /* attempt and guess step paragraphs */
