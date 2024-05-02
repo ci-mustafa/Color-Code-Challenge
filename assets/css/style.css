@@ -59,10 +59,25 @@ body {
 
 /* Game area */
 #game-area {
-    display: none;
     /* Make game area by default display to none */
+    display: none;
+    margin-top: 30%;
+    margin-left: 10px;
+    margin-right: 10px;
+    
 }
 
+/* Game area heading */
+#game-area-heading {
+    font-family:"Chakra Petch", sans-serif ;
+    color: #150734;
+    border: solid;
+    border-radius: 20px;
+    border-color: wheat;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    opacity: 0.8;
+}
 /* color box */
 #color-box {
     border: solid;
