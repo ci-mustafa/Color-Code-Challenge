@@ -180,3 +180,15 @@ body {
     border-radius: 20px;
     box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.8);
 }
+
+/* score text */
+#score-text {
+    font-family: "Chakra Petch", sans-serif;
+    color: white;
+    font-size: larger;
+}
+
+/* score value */
+#score {
+    color: black;
+}
