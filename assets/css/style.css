@@ -84,6 +84,14 @@ body {
     font-family: "Jersey 20", sans-serif;
     color: white;
 }
+
+/* instruction heading */
+#inst-heading {
+    font-family:"Chakra Petch", sans-serif ;
+    color: white;
+    text-align: left;
+    margin-bottom: 5px;
+}
 /* color box */
 #color-box {
     border: solid;
