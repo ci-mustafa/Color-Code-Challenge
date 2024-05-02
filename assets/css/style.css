@@ -76,6 +76,14 @@ body {
     opacity: 0.8;
     box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.9);
 }
+
+/* game area paragraph */
+.game-area-p {
+    text-align: left;
+    margin-bottom: 10px;
+    font-family: "Jersey 20", sans-serif;
+    color: white;
+}
 /* color box */
 #color-box {
     border: solid;
