@@ -300,6 +300,8 @@ body {
 /* media query: larger devices laptop and desktop (992px and up) */
 @media screen and (min-width: 992px) {
     
-    
+    #start-guess {
+        margin-top: 20%;
+    }
 
 }
