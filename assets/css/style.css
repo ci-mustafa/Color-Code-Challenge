@@ -7,12 +7,7 @@
 
 /* body */
 body {
-    /* Create a linear gradient with colorful colors */
-    background: linear-gradient(to right,
-            red,
-            orange,
-            green,
-            violet);
+    background-color: #3f6844
 }
 
 /* game section */
