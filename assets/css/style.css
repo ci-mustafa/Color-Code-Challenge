@@ -286,4 +286,8 @@ body {
         padding: 5px;
         margin-bottom: 20px;
     }
+
+    #score-text {
+        font-size: xx-large;
+    }
 }
