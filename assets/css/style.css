@@ -206,6 +206,10 @@ body {
         margin: 20px;
     }
 
+    #game-area {
+        margin-top: auto;
+    }
+
     #start-guess {
         width: fit-content;
         height: fit-content;
