@@ -280,6 +280,7 @@ body {
     }
 
     #submit {
+        float: left;
         height: 40px;
         font-size: x-large;
         width: 15%;
@@ -288,6 +289,7 @@ body {
     }
 
     #score-text {
+        float: right;
         font-size: xx-large;
     }
 }
