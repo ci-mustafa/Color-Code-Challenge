@@ -268,4 +268,8 @@ body {
         font-size: medium;
         margin-bottom: 15px;
     }
+
+    #guess-box {
+        height: 40px;
+    }
 }
