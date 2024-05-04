@@ -102,8 +102,7 @@ body {
 
 /* color box */
 #color-box {
-    border: solid;
-    border-color: #63bce5;
+    border: hidden;
     border-radius: 20px;
     width: 30%;
     height: 80px;
