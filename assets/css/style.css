@@ -61,12 +61,12 @@ body {
     margin-top: 10%;
     margin-left: 10px;
     margin-right: 10px;
-    
+
 }
 
 /* Game area heading */
 #game-area-heading {
-    font-family:"Chakra Petch", sans-serif ;
+    font-family: "Chakra Petch", sans-serif;
     color: white;
     border: solid;
     border-radius: 20px;
@@ -88,7 +88,7 @@ body {
 
 /* instruction heading */
 #inst-heading {
-    font-family:"Chakra Petch", sans-serif ;
+    font-family: "Chakra Petch", sans-serif;
     color: white;
     text-align: left;
     margin-bottom: 5px;
@@ -104,6 +104,7 @@ body {
     margin-left: 25px;
     list-style-type: square;
 }
+
 /* color box */
 #color-box {
     border: solid;
@@ -159,7 +160,7 @@ body {
 
 /* userinput, guess box */
 #guess-box {
-    font-family:"Chakra Petch", sans-serif ;
+    font-family: "Chakra Petch", sans-serif;
     border-color: #63bce5;
     border-radius: 10px;
     height: 30px;
@@ -196,4 +197,28 @@ body {
 /* score value */
 #score {
     color: black;
+}
+
+/* media query: tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
+
+    #start-guess {
+        width: fit-content;
+        height: fit-content;
+        margin-left: 17.4%;
+        margin-top: 50%;
+    }
+
+    #start-heading {
+        font-size: 50px;
+        margin: 20px;
+    }
+
+    #start-button {
+        height: 60px;
+        font-size: xx-large;
+        margin-bottom: 20px;
+        width: 150px;
+    }
+}
 }
