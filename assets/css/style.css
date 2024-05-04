@@ -205,8 +205,8 @@ body {
     #start-guess {
         width: fit-content;
         height: fit-content;
-        margin-left: 17.4%;
-        margin-top: 50%;
+        margin: auto;
+        margin-top: 40%;
     }
 
     #start-heading {
@@ -220,5 +220,4 @@ body {
         margin-bottom: 20px;
         width: 150px;
     }
-}
 }
