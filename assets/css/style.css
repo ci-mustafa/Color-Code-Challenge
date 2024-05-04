@@ -272,6 +272,9 @@ body {
     #guess-box {
         height: 40px;
         width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
     }
 
     #validation-text {
@@ -293,3 +296,10 @@ body {
         font-size: xx-large;
     }
 }
+
+/* media query: larger devices laptop and desktop (992px and up) */
+/* @media screen and (min-width: 992px) {
+    
+    
+
+} */
