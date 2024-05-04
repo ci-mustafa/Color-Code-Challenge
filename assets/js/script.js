@@ -142,7 +142,7 @@ function checkUserGuess() {
                     // set a timeout to change font color to default
                     setTimeout( function() {
                         valiText.style.color = "";
-                    }, 500)
+                    }, 200)
                 })
                 
             }
