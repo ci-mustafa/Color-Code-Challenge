@@ -115,8 +115,12 @@ function checkUserGuess() {
     // get submit button and add a click event listener to it
     document.getElementById("submit").addEventListener("click", function () {
 
+        // get guess box and focus on it
+        document.getElementById("guess-box").focus();
+
         // store input user in a variable
         let userGuess = getUserGuess();
+        
         // call validateuserinput function
         validateUserInput();
 
