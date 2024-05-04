@@ -304,4 +304,18 @@ body {
         margin-top: 20%;
     }
 
+    #start-button:hover {
+        background-color: #7ed5ea;
+        color: #150734;
+    }
+
+    #submit:hover {
+        background-color: #7ed5ea;
+        color: #150734;
+    }
+
+    #guess-box:hover {
+        border-color: #150734;
+    }
+
 }
