@@ -27,6 +27,8 @@ function startGame() {
     generatedColor = generateColor();
     document.getElementById("color-box").style.backgroundColor = generatedColor;
     console.log(generatedColor);
+    // get guess box and focus on it
+    document.getElementById("guess-box").focus();
     // access guess-step paragraph and attemp-p paragraph
     let pInfo = document.getElementById("guess-step");
     let attemptPara = document.getElementById("attempt-p");
