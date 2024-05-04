@@ -233,4 +233,18 @@ body {
         margin-left: auto;
         margin-right: auto;
     }
+
+    .game-area-p {
+        font-size: larger;
+        margin-bottom: 20px;
+    }
+
+    #inst-heading {
+        margin-bottom: 20px;
+    }
+
+    #hexa-code-rolls {
+        font-size: larger;
+        margin-bottom: 30px;
+    }
 }
