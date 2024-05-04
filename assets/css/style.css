@@ -258,4 +258,14 @@ body {
         margin-right: auto;
         margin-bottom: 40px;
     }
+
+    #guess-step {
+        font-size: medium;
+        margin-bottom: 10px;
+    }
+
+    #attempt-p {
+        font-size: medium;
+        margin-bottom: 15px;
+    }
 }
