@@ -275,5 +275,6 @@ body {
 
     #validation-text {
         font-size: medium;
+        margin-bottom: 10px;
     }
 }
