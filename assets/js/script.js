@@ -120,7 +120,7 @@ function checkUserGuess() {
 
         // store input user in a variable
         let userGuess = getUserGuess();
-        
+
         // call validateuserinput function
         validateUserInput();
 
@@ -138,7 +138,7 @@ function checkUserGuess() {
                 // when submit button for second time pressed, make validation text color to black
                 document.getElementById("submit").addEventListener("click", function() {
                     let valiText = document.getElementById("validation-text");
-                    valiText.style.color = "black";
+                    valiText.style.color = "red";
                     // set a timeout to change font color to default
                     setTimeout( function() {
                         valiText.style.color = "";
