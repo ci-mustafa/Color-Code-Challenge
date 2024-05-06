@@ -136,15 +136,15 @@ function checkUserGuess() {
                 attempts--;
             } else {
                 // when submit button for second time pressed, make validation text color to black
-                document.getElementById("submit").addEventListener("click", function() {
+                document.getElementById("submit").addEventListener("click", function () {
                     let valiText = document.getElementById("validation-text");
                     valiText.style.color = "red";
                     // set a timeout to change font color to default
-                    setTimeout( function() {
+                    setTimeout(function () {
                         valiText.style.color = "";
                     }, 200)
                 })
-                
+
             }
             // list to store correct guesses
             let correctGuesses = [];
@@ -171,10 +171,20 @@ function checkUserGuess() {
                 pValue.textContent += correctGuesses[i][1] + ", ";
             }
 
+            // assign attempts to the textContent of attemptValue
             attemptValue.textContent = attempts;
-            attemptPara.style.display = "block";
-            pInfo.style.display = "block";
 
+            // check if userinput is less then 7 char or not include # symbol 
+            // do not display guess steps paragraph and attempt paragraph
+            let guessBoxValue = document.getElementById("guess-box").value;
+            if (guessBoxValue.length !== 7 || !guessBoxValue.includes("#")) {
+                pInfo.style.display = "none";
+                attemptPara.style.display = "none";
+            } else {
+                pInfo.style.display = "block";
+                attemptPara.style.display = "block";
+            }
+            
             // check if attempts are exhausted
             if (attempts === 0) {
                 // if attempts is 0 and userGuess is equal to generatedColor, increase score and call startGame function
