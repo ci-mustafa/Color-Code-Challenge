@@ -148,7 +148,7 @@ function checkUserGuess() {
             }
             // list to store correct guesses
             let correctGuesses = [];
-            for (let i = 0; i < userGuess.length; i++) {
+            for (let i = 1; i < userGuess.length; i++) {
                 if (generatedColor[i] === userGuess[i]) {
                     correctGuesses.push([i, userGuess[i]]);
                 }
