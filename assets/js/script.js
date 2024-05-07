@@ -229,17 +229,17 @@ document.getElementById("hint-button").addEventListener("click", function() {
     // display hints based on hint counter
     if (hintCounter === 1) {
         // First hint: Show the first character of the color code
-        window.alert(`First Color Code: ${generatedColor.slice(1, 2)}`);
+        window.alert("First hint revealed! you have 2 hints left.");
         hintChar = generatedColor.slice(1, 2);
         hintTextContent.textContent = hintChar + hintTextContent.textContent.slice(1);
     } else if (hintCounter === 2) {
         // Second hint: Show the last character of the color code
-        window.alert(`Last Color Code: ${generatedColor.slice(-1)}`);
+        window.alert("Second hint revealed! you have 1 hints left.");
         hintChar = generatedColor.slice(-1);
         hintTextContent.textContent = hintTextContent.textContent.slice(0, 5) + hintChar ;
     } else if (hintCounter === 3) {
         // Third hint: Show the middle two characters of the color code
-        window.alert(`Second Color Code: ${generatedColor.slice(3, 5)}`);
+        window.alert("Final hint revealed! Last chance to guess.");
         hintChar = generatedColor.slice(3, 5);
         hintTextContent.textContent = hintTextContent.textContent.slice(0, 2) + hintChar + hintTextContent.textContent.slice(4);
         // Disable hint button after all hints are used
