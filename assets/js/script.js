@@ -129,6 +129,12 @@ function checkUserGuess() {
             increaseScore(); // calling increaseScore function to increase score
             startGame(); // generate a new color
             document.getElementById("guess-box").value = "";
+
+            // Renew hint process and enable hint button
+            hintCounter = 0;
+            document.getElementById("hint-button").disabled = false;
+
+            document.getElementById("hint-value").textContent = "------";
         } else {
             // if validateuserinput function return true perform decrement
             if (validateUserInput()) {
@@ -196,6 +202,12 @@ function checkUserGuess() {
                 let scoreElement = document.getElementById("score");
                 scoreElement.textContent = 0;
                 document.getElementById("guess-box").value = "";
+
+                // Renew hint process and enable hint button
+                hintCounter = 0;
+                document.getElementById("hint-button").disabled = false;
+
+                document.getElementById("hint-value").textContent = "------";
             }
 
 
@@ -203,14 +215,23 @@ function checkUserGuess() {
     });
 }
 let hintCounter = 0;
-document.getElementById("hint").addEventListener("click", function() {
+document.getElementById("hint-button").addEventListener("click", function() {
     hintCounter ++;
+    let hintTextContent = document.getElementById("hint-value");
+    let hintChar;
     if (hintCounter === 1) {
         window.alert(`First Color Code: ${generatedColor.slice(1, 2)}`);
+        hintChar = generatedColor.slice(1, 2);
+        hintTextContent.textContent = hintChar + hintTextContent.textContent.slice(1);
     } else if (hintCounter === 2) {
         window.alert(`Last Color Code: ${generatedColor.slice(-1)}`);
+        hintChar = generatedColor.slice(-1);
+        hintTextContent.textContent = hintTextContent.textContent.slice(0, 5) + hintChar ;
     } else if (hintCounter === 3) {
-        window.alert(`Second Color Code: ${generatedColor.slice(2, 3)}`);
+        window.alert(`Second Color Code: ${generatedColor.slice(3, 5)}`);
+        hintChar = generatedColor.slice(3, 5);
+        hintTextContent.textContent = hintTextContent.textContent.slice(0, 2) + hintChar + hintTextContent.textContent.slice(4);
+        document.getElementById("hint-button").disabled = true;
     }
 })
 // calling checkUserGuess function
