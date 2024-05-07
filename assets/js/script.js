@@ -202,6 +202,16 @@ function checkUserGuess() {
         }
     });
 }
-
+let hintCounter = 0;
+document.getElementById("hint").addEventListener("click", function() {
+    hintCounter ++;
+    if (hintCounter === 1) {
+        window.alert(`First Color Code: ${generatedColor.slice(1, 2)}`);
+    } else if (hintCounter === 2) {
+        window.alert(`Last Color Code: ${generatedColor.slice(-1)}`);
+    } else if (hintCounter === 3) {
+        window.alert(`Second Color Code: ${generatedColor.slice(2, 3)}`);
+    }
+})
 // calling checkUserGuess function
 checkUserGuess();
