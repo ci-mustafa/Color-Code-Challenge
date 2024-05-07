@@ -134,6 +134,7 @@ function checkUserGuess() {
             hintCounter = 0;
             document.getElementById("hint-button").disabled = false;
 
+            // make text content of hint value to default
             document.getElementById("hint-value").textContent = "------";
         } else {
             // if validateuserinput function return true perform decrement
@@ -207,6 +208,7 @@ function checkUserGuess() {
                 hintCounter = 0;
                 document.getElementById("hint-button").disabled = false;
 
+                // make text content of hint value to default
                 document.getElementById("hint-value").textContent = "------";
             }
 
@@ -214,23 +216,33 @@ function checkUserGuess() {
         }
     });
 }
+// create a variable to hold counter value
 let hintCounter = 0;
+// add click event listener to the hint button
 document.getElementById("hint-button").addEventListener("click", function() {
+    // increament hint counter by every click
     hintCounter ++;
+    // get hint-value element
     let hintTextContent = document.getElementById("hint-value");
+    // variable to store hint character
     let hintChar;
+    // display hints based on hint counter
     if (hintCounter === 1) {
+        // First hint: Show the first character of the color code
         window.alert(`First Color Code: ${generatedColor.slice(1, 2)}`);
         hintChar = generatedColor.slice(1, 2);
         hintTextContent.textContent = hintChar + hintTextContent.textContent.slice(1);
     } else if (hintCounter === 2) {
+        // Second hint: Show the last character of the color code
         window.alert(`Last Color Code: ${generatedColor.slice(-1)}`);
         hintChar = generatedColor.slice(-1);
         hintTextContent.textContent = hintTextContent.textContent.slice(0, 5) + hintChar ;
     } else if (hintCounter === 3) {
+        // Third hint: Show the middle two characters of the color code
         window.alert(`Second Color Code: ${generatedColor.slice(3, 5)}`);
         hintChar = generatedColor.slice(3, 5);
         hintTextContent.textContent = hintTextContent.textContent.slice(0, 2) + hintChar + hintTextContent.textContent.slice(4);
+        // Disable hint button after all hints are used
         document.getElementById("hint-button").disabled = true;
     }
 })
