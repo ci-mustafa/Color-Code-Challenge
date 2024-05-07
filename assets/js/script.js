@@ -136,6 +136,9 @@ function checkUserGuess() {
 
             // make text content of hint value to default
             document.getElementById("hint-value").textContent = "------";
+
+            // hide hint paragraph
+            document.getElementById("hint-p").style.display = "none";
         } else {
             // if validateuserinput function return true perform decrement
             if (validateUserInput()) {
@@ -210,6 +213,9 @@ function checkUserGuess() {
 
                 // make text content of hint value to default
                 document.getElementById("hint-value").textContent = "------";
+
+                // hide hint paragraph
+                document.getElementById("hint-p").style.display = "none";
             }
 
 
@@ -220,8 +226,10 @@ function checkUserGuess() {
 let hintCounter = 0;
 // add click event listener to the hint button
 document.getElementById("hint-button").addEventListener("click", function() {
-    let hintParagraph = document.getElementById("hint-p");
-    hintParagraph.style.display = "block";
+    
+    // display hint paragraph
+    document.getElementById("hint-p").style.display = "block";
+
     // increament hint counter by every click
     hintCounter ++;
     // get hint-value element
