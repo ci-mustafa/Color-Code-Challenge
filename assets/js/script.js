@@ -220,6 +220,8 @@ function checkUserGuess() {
 let hintCounter = 0;
 // add click event listener to the hint button
 document.getElementById("hint-button").addEventListener("click", function() {
+    let hintParagraph = document.getElementById("hint-p");
+    hintParagraph.style.display = "block";
     // increament hint counter by every click
     hintCounter ++;
     // get hint-value element
