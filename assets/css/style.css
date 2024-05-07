@@ -196,6 +196,13 @@ body {
     box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.8);
 }
 
+/* Hint paragraph */
+#hint-p {
+    font-family: "Chakra Petch", sans-serif;
+    color: white;
+    font-size:larger;
+}
+
 /* score text */
 #score-text {
     font-family: "Chakra Petch", sans-serif;
