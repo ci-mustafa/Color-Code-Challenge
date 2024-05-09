@@ -72,17 +72,45 @@ function getUserGuess() {
  * Function to increase score
  */
 function increaseScore() {
+    let dimondCounter = 0;
+    let goldCounter = 0;
+    let silverCounter = 0;
+    let bronzeCounter = 0;
     let scoreElement = document.getElementById("score");
     let score = parseInt(scoreElement.textContent);
     // increase score based hint uses
     if(hintCounter === 0) {
         score += 4;
+        dimondCounter += 1;
+        let dimondElement = document.getElementById("dimond");
+        let dimondElemetTextContent = dimondElement.textContent;
+        let toInt = parseInt(dimondElemetTextContent)
+        dimondElement.textContent =  toInt += dimondCounter;
+        dimondElement.style.fontFamily = "Chakra Petch, sans-serif";
     } else if (hintCounter === 1) {
         score += 3;
+        goldCounter +=1 ;
+        let goldElement = document.getElementById("gold");
+        let goldElementTextContent = goldElement.textContent;
+        let toInt = parseInt(goldElementTextContent)
+        goldElement.textContent = toInt += goldCounter;
+        goldElement.style.fontFamily = "Chakra Petch, sans-serif";
     } else if (hintCounter === 2) {
         score += 2;
+        silverCounter += 1;
+        let silverElement = document.getElementById("silver");
+        let silverElementTextContent = silverElement.textContent;
+        let toInt = parseInt(silverElementTextContent);
+        silverElement.textContent = toInt += silverCounter;
+        silverElement.style.fontFamily = "Chakra Petch, sans-serif";
     } else if (hintCounter === 3) {
         score += 1;
+        bronzeCounter += 1;
+        let bronzeElement = document.getElementById("bronze");
+        let bronzeElementTextContent = bronzeElement.textContent;
+        let toInt = parseInt(bronzeElementTextContent);
+        bronzeElement.textContent = toInt += bronzeCounter;
+        bronzeElement.style.fontFamily = "Chakra Petch, sans-serif";
     }
     scoreElement.textContent = score;
 }
