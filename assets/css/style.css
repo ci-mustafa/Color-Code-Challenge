@@ -103,10 +103,22 @@ body {
 #level-area {
     background-color: black;
     height: 30px;
-    width: 50%;
+    width: 115px;
     margin-bottom: 10px;
     border-radius: 10px;
     box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.levels {
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    margin-right: 3px;
+    margin-left: 3px;
 }
 
 /* color box */
