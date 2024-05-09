@@ -121,6 +121,21 @@ body {
     margin-left: 3px;
 }
 
+#dimond {
+    background-color: #d7d7d7;
+}
+
+#gold {
+    background-color: #c9b037;
+}
+
+#silver {
+    background-color: #b4b4b4;
+}
+
+#bronze {
+    background-color: #6a3805;
+}
 /* color box */
 #color-box {
     border: hidden;
