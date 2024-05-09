@@ -122,19 +122,19 @@ body {
 }
 
 #dimond {
-    background-color: #d7d7d7;
+    background: linear-gradient(135deg, #d3d3d3, #eaeaea);
 }
 
 #gold {
-    background-color: #c9b037;
+    background: linear-gradient(135deg, #f2c200, #c9b037);
 }
 
 #silver {
-    background-color: #b4b4b4;
+    background: linear-gradient(135deg, #8d8d8d, #ffffff);
 }
 
 #bronze {
-    background-color: #6a3805;
+    background: linear-gradient(135deg, #cd7f32, #b48f66);
 }
 
 .levels-text {
