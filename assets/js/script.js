@@ -273,22 +273,24 @@ document.getElementById("hint-button").addEventListener("click", function() {
     let hintTextContent = document.getElementById("hint-value");
     // variable to store hint character
     let hintChar;
+    // get message box text
+    let messageBoXPElement = document.getElementById("message-box-text");
     // display hints based on hint counter
     if (hintCounter === 1) {
         // First hint: Show the first character of the color code
-        window.alert("First hint revealed! you have 2 hints left.");
         hintChar = generatedColor.slice(1, 2);
         hintTextContent.textContent = hintChar + hintTextContent.textContent.slice(1);
+        messageBoXPElement.textContent = "First hint revealed! you have 2 hints left.";
     } else if (hintCounter === 2) {
         // Second hint: Show the last character of the color code
-        window.alert("Second hint revealed! you have 1 hints left.");
         hintChar = generatedColor.slice(-1);
         hintTextContent.textContent = hintTextContent.textContent.slice(0, 5) + hintChar ;
+        messageBoXPElement.textContent = "Second hint revealed! you have 1 hints left.";
     } else if (hintCounter === 3) {
         // Third hint: Show the middle two characters of the color code
-        window.alert("Final hint revealed! Last chance to guess.");
         hintChar = generatedColor.slice(3, 5);
         hintTextContent.textContent = hintTextContent.textContent.slice(0, 2) + hintChar + hintTextContent.textContent.slice(4);
+        messageBoXPElement.textContent = "Final hint revealed! Last chance to guess.";
         // Disable hint button after all hints are used
         document.getElementById("hint-button").disabled = true;
     }
