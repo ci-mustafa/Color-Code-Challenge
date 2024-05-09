@@ -99,6 +99,15 @@ body {
     margin-left: 25px;
     list-style-type: square;
 }
+/* level area */
+#level-area {
+    background-color: black;
+    height: 30px;
+    width: 50%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.9);
+}
 
 /* color box */
 #color-box {
