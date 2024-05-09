@@ -136,6 +136,13 @@ body {
 #bronze {
     background-color: #6a3805;
 }
+
+.levels-text {
+    font-family: "Chakra Petch", sans-serif;
+    font-size: small;
+    color: #222222;
+    font-weight: bold;
+}
 /* color box */
 #color-box {
     border: hidden;
