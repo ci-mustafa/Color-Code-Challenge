@@ -74,7 +74,16 @@ function getUserGuess() {
 function increaseScore() {
     let scoreElement = document.getElementById("score");
     let score = parseInt(scoreElement.textContent);
-    score += 1;
+    // increase score based hint uses
+    if(hintCounter === 0) {
+        score += 4;
+    } else if (hintCounter === 1) {
+        score += 3;
+    } else if (hintCounter === 2) {
+        score += 2;
+    } else if (hintCounter === 3) {
+        score += 1;
+    }
     scoreElement.textContent = score;
 }
 /**
