@@ -106,12 +106,14 @@ body {
     left: 50%; /* Center horizontally */
     transform: translate(-50%, -50%); /* Centering trick */
     padding: 20px;
-    background-color: #1F3044; 
+    background-color: #438945; 
     color: white;
     z-index: 1000;
     width: 80%;
     box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.9);
     display: none;
+    font-family: "Chakra Petch", sans-serif;
+    font-size: x-small;
   }
   
   /* The close button */
