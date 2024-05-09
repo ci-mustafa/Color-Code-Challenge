@@ -277,6 +277,7 @@ document.getElementById("hint-button").addEventListener("click", function() {
     if (hintCounter === 1) {
         // First hint: Show the first character of the color code
         window.alert("First hint revealed! you have 2 hints left.");
+        
         hintChar = generatedColor.slice(1, 2);
         hintTextContent.textContent = hintChar + hintTextContent.textContent.slice(1);
     } else if (hintCounter === 2) {
