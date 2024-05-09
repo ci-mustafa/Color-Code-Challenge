@@ -99,6 +99,12 @@ body {
     margin-left: 25px;
     list-style-type: square;
 }
+
+/* hr */
+hr {
+    border-color: #63bce5;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.9);
+}
 /* level area */
 #level-area {
     background-color: black;
