@@ -28,6 +28,10 @@
             <button id="start-button">Start</button>
         </div>
         <div id="game-area">
+            <div class="alert">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                This is an alert box.
+            </div>
             <h1 id="game-area-heading">Welcome To Color Box Guessing!</h1>
             <br>
             <p class="game-area-p">Can you guess the color of the box? Type in the hexadecimal color code and see if you
@@ -38,9 +42,6 @@
                 <li>Hexadecimal color codes must be 7 characters in length, including the '#'.</li>
                 <li>A hexadecimal color code consists of numbers (0-9) and letters (a-f).</li>
             </ul>
-            <div id="hint-message-box">
-                <button id="close-hint-box-message">X</button>
-            </div>
             <hr>
             <div id="level-area">
                 <div id="dimond" class="levels"><span id="dimond-text" class="levels-text">0</span></div>
@@ -61,7 +62,7 @@
             <button id="hint-button">Hint</button>
             <p class="hidden-p" id="hint-p"><span id="hint-value">------</span></p>
             <button id="submit">Guess</button>
-            <p id="score-text">Total Score: <span id="score">0</span></p>   
+            <p id="score-text">Total Score: <span id="score">0</span></p>
         </div>
     </section>
     <script src="assets/js/script.js"></script>

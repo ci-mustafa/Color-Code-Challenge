@@ -7,7 +7,7 @@
 
 /* body */
 body {
-    background-color: #3f6844
+    background-color: #3f6844;
 }
 
 /* game section */
@@ -99,6 +99,31 @@ body {
     margin-left: 25px;
     list-style-type: square;
 }
+/* The alert message box */
+.alert {
+    position: fixed; /* Position fixed to keep it overlayed */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Centering trick */
+    padding: 20px;
+    background-color: #1F3044; 
+    color: white;
+    z-index: 1000;
+    width: 80%;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.9);
+  }
+  
+  /* The close button */
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
 
 /* hr */
 hr {
