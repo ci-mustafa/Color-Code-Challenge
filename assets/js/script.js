@@ -161,6 +161,9 @@ function checkUserGuess() {
         // call validateuserinput function
         validateUserInput();
 
+        // change hint button color to default
+        document.getElementById("hint-button").style.backgroundColor = "#150734";
+
         // check user guess against generated color
         if (userGuess === generatedColor) {
             increaseScore(); // calling increaseScore function to increase score
@@ -295,7 +298,10 @@ document.getElementById("hint-button").addEventListener("click", function () {
         messageBoXPElement.textContent = "Final hint revealed! Last chance to guess.";
         showHintMessage();
         // Disable hint button after all hints are used
-        document.getElementById("hint-button").disabled = true;
+        let hintButton = document.getElementById("hint-button");
+        hintButton.disabled = true;
+        hintButton.style.backgroundColor = "#CCCCCC"
+
     }
 })
 
