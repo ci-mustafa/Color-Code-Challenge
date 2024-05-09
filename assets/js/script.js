@@ -79,17 +79,17 @@ function increaseScore() {
     let scoreElement = document.getElementById("score");
     let score = parseInt(scoreElement.textContent);
     // increase score based hint uses
-    if(hintCounter === 0) {
+    if (hintCounter === 0) {
         score += 4;
         dimondCounter += 1;
         let dimondElement = document.getElementById("dimond");
         let dimondElemetTextContent = dimondElement.textContent;
         let toInt = parseInt(dimondElemetTextContent)
-        dimondElement.textContent =  toInt += dimondCounter;
+        dimondElement.textContent = toInt += dimondCounter;
         dimondElement.style.fontFamily = "Chakra Petch, sans-serif";
     } else if (hintCounter === 1) {
         score += 3;
-        goldCounter +=1 ;
+        goldCounter += 1;
         let goldElement = document.getElementById("gold");
         let goldElementTextContent = goldElement.textContent;
         let toInt = parseInt(goldElementTextContent)
@@ -231,7 +231,7 @@ function checkUserGuess() {
                 pInfo.style.display = "block";
                 attemptPara.style.display = "block";
             }
-            
+
             // check if attempts are exhausted
             if (attempts === 0) {
                 // if attempts is 0 and userGuess is equal to generatedColor, increase score and call startGame function
@@ -262,13 +262,13 @@ function checkUserGuess() {
 // create a variable to hold counter value
 let hintCounter = 0;
 // add click event listener to the hint button
-document.getElementById("hint-button").addEventListener("click", function() {
-    
+document.getElementById("hint-button").addEventListener("click", function () {
+
     // display hint paragraph
     document.getElementById("hint-p").style.display = "block";
 
     // increament hint counter by every click
-    hintCounter ++;
+    hintCounter++;
     // get hint-value element
     let hintTextContent = document.getElementById("hint-value");
     // variable to store hint character
@@ -281,19 +281,42 @@ document.getElementById("hint-button").addEventListener("click", function() {
         hintChar = generatedColor.slice(1, 2);
         hintTextContent.textContent = hintChar + hintTextContent.textContent.slice(1);
         messageBoXPElement.textContent = "First hint revealed! you have 2 hints left.";
+        showHintMessage();
     } else if (hintCounter === 2) {
         // Second hint: Show the last character of the color code
         hintChar = generatedColor.slice(-1);
-        hintTextContent.textContent = hintTextContent.textContent.slice(0, 5) + hintChar ;
+        hintTextContent.textContent = hintTextContent.textContent.slice(0, 5) + hintChar;
         messageBoXPElement.textContent = "Second hint revealed! you have 1 hints left.";
+        showHintMessage();
     } else if (hintCounter === 3) {
         // Third hint: Show the middle two characters of the color code
         hintChar = generatedColor.slice(3, 5);
         hintTextContent.textContent = hintTextContent.textContent.slice(0, 2) + hintChar + hintTextContent.textContent.slice(4);
         messageBoXPElement.textContent = "Final hint revealed! Last chance to guess.";
+        showHintMessage();
         // Disable hint button after all hints are used
         document.getElementById("hint-button").disabled = true;
     }
 })
+
+/**
+ * Function to show and style hint message
+ */
+function showHintMessage() {
+    // get message box
+    let hintMessageBox = document.getElementById("hint-message-box");
+    hintMessageBox.style.display = "block"; // Display the message box
+    // Apply styles
+    hintMessageBox.style.position = "fixed";
+    hintMessageBox.style.top = "50%";
+    hintMessageBox.style.left = "50%";
+    hintMessageBox.style.transform = "translate(-50%, -50%)";
+    hintMessageBox.style.padding = "20px";
+    hintMessageBox.style.backgroundColor = "#1F3044";
+    hintMessageBox.style.color = "white";
+    hintMessageBox.style.zIndex = "1000";
+    hintMessageBox.style.width = "80%";
+    hintMessageBox.style.boxShadow = "2px 2px 15px rgba(0, 0, 0, 0.9)";
+}
 // calling checkUserGuess function
 checkUserGuess();
