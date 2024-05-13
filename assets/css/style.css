@@ -469,4 +469,9 @@ hr {
         border-color: #150734;
     }
 
+    #hint-button {
+        margin-right: 12%;
+        width: 20%;
+    }
+
 }
