@@ -170,7 +170,7 @@ hr {
     border-radius: 10px;
     box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.9);
     display: inline-block;
-    margin-right: 40px;
+    margin-right: 20px;
 }
 
 .levels {
@@ -209,10 +209,14 @@ hr {
 /* display username */
 #user-name-t {
     font-family: "Chakra Petch", sans-serif;
-    color: white;
+    color: #8d8d8d;
     display: inline-block;
     text-transform: capitalize;
-    font-size: larger;
+    font-size: large;
+    padding: 3px;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.9);
 }
 /* color box */
 #color-box {
