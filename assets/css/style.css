@@ -32,6 +32,33 @@ body {
     font-family: "Chakra Petch", sans-serif;
     margin: 10px;
     color: #0f2557;
+    margin-bottom: 20px;
+}
+
+/* username */
+#user-name-label {
+    font-family: "Chakra Petch", sans-serif;
+    color: white;
+}
+
+#user-name {
+    font-family: "Chakra Petch", sans-serif;
+    border-color: #63bce5;
+    border-radius: 10px;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.9);
+    color: white;
+    text-align: center;
+    font-size: large;
+}
+
+#user-name-validation-text {
+    font-family: "Chakra Petch", sans-serif;
+    color: white;
+    font-size: x-small;
 }
 
 /* start button */
