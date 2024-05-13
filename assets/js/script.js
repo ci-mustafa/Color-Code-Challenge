@@ -19,32 +19,39 @@ document.addEventListener("DOMContentLoaded", function () {
  * Function to start the game and give the box a random color
  */
 function startGame() {
-    // show game area div
-    document.getElementById("game-area").style.display = "block";
-    // hide start screen
-    document.getElementById("start-guess").style.display = "none";
-    // generate a random color
-    generatedColor = generateColor();
-    document.getElementById("color-box").style.backgroundColor = generatedColor;
-    console.log(generatedColor);
-    // get guess box and focus on it
-    document.getElementById("guess-box").focus();
-    // access guess-step paragraph and attemp-p paragraph
-    let pInfo = document.getElementById("guess-step");
-    let attemptPara = document.getElementById("attempt-p");
-    // if display prop is block change it to none
-    if (pInfo.style.display === "block" || attemptPara.style.display === "block") {
-        pInfo.style.display = "none";
-        attemptPara.style.display = "none";
-    }
+    // username validation
+    let userName = document.getElementById("user-name").value;
+    let userNameText = document.getElementById("user-name-validation-text");
+    if (userName.length < 8) {
+        userNameText.textContent = "Username should be at least 8 characters long.";
+    } else {
+        // show game area div
+        document.getElementById("game-area").style.display = "block";
+        // hide start screen
+        document.getElementById("start-guess").style.display = "none";
+        // generate a random color
+        generatedColor = generateColor();
+        document.getElementById("color-box").style.backgroundColor = generatedColor;
+        console.log(generatedColor);
+        // get guess box and focus on it
+        document.getElementById("guess-box").focus();
+        // access guess-step paragraph and attemp-p paragraph
+        let pInfo = document.getElementById("guess-step");
+        let attemptPara = document.getElementById("attempt-p");
+        // if display prop is block change it to none
+        if (pInfo.style.display === "block" || attemptPara.style.display === "block") {
+            pInfo.style.display = "none";
+            attemptPara.style.display = "none";
+        }
 
-    // change attempts to defualt
-    attempts = 10;
+        // change attempts to defualt
+        attempts = 10;
 
-    // access validation text
-    let valiText = document.getElementById("validation-text");
-    if (valiText.style.display === "block") {
-        valiText.style.display = "none";
+        // access validation text
+        let valiText = document.getElementById("validation-text");
+        if (valiText.style.display === "block") {
+            valiText.style.display = "none";
+        }
     }
 }
 
