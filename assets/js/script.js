@@ -11,6 +11,7 @@ let attempts = 10;
 // wait the DOM to finish loading before running the game
 document.addEventListener("DOMContentLoaded", function () {
     let startButton = document.getElementById("start-button");
+    document.getElementById("user-name").focus();
     // add click event listener for start button to run a function
     startButton.addEventListener("click", startGame);
 });
