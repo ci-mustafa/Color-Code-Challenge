@@ -20,10 +20,10 @@ document.addEventListener("DOMContentLoaded", function () {
  */
 function startGame() {
     // username validation
-    const userNameLength = 8;
+    const userNameLength = 6;
     let userName = document.getElementById("user-name").value;
     let userNameText = document.getElementById("user-name-validation-text");
-    if (userName.length < userNameLength) {
+    if (userName.length !== userNameLength) {
         userNameText.textContent = "Username should be at least 8 characters long.";
     } else {
         // show game area div
