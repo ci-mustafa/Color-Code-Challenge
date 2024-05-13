@@ -20,15 +20,19 @@ document.addEventListener("DOMContentLoaded", function () {
  */
 function startGame() {
     // username validation
+    const userNameLength = 8;
     let userName = document.getElementById("user-name").value;
     let userNameText = document.getElementById("user-name-validation-text");
-    if (userName.length < 8) {
+    if (userName.length < userNameLength) {
         userNameText.textContent = "Username should be at least 8 characters long.";
     } else {
         // show game area div
         document.getElementById("game-area").style.display = "block";
         // hide start screen
         document.getElementById("start-guess").style.display = "none";
+        // get username text
+        let userNameTextElement = document.getElementById("user-name-t");
+        userNameTextElement.textContent = userName;
         // generate a random color
         generatedColor = generateColor();
         document.getElementById("color-box").style.backgroundColor = generatedColor;
