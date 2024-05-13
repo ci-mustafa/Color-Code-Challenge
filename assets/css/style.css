@@ -36,11 +36,6 @@ body {
 }
 
 /* username */
-#user-name-label {
-    font-family: "Chakra Petch", sans-serif;
-    color: white;
-}
-
 #user-name {
     font-family: "Chakra Petch", sans-serif;
     border-color: #63bce5;
@@ -126,14 +121,19 @@ body {
     margin-left: 25px;
     list-style-type: square;
 }
+
 /* The alert message box */
 #hint-message-box {
-    position: fixed; /* Position fixed to keep it overlayed */
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Centering trick */
+    position: fixed;
+    /* Position fixed to keep it overlayed */
+    top: 50%;
+    /* Center vertically */
+    left: 50%;
+    /* Center horizontally */
+    transform: translate(-50%, -50%);
+    /* Centering trick */
     padding: 20px;
-    background-color: #438945; 
+    background-color: #438945;
     color: white;
     z-index: 1000;
     width: 80%;
@@ -141,10 +141,10 @@ body {
     display: none;
     font-family: "Chakra Petch", sans-serif;
     font-size: x-small;
-  }
-  
-  /* The close button */
-  .closebtn {
+}
+
+/* The close button */
+.closebtn {
     margin-left: 15px;
     color: white;
     font-weight: bold;
@@ -153,13 +153,14 @@ body {
     line-height: 20px;
     cursor: pointer;
     transition: 0.3s;
-  }
+}
 
 /* hr */
 hr {
     border-color: #63bce5;
     box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.9);
 }
+
 /* level area */
 #level-area {
     background-color: black;
@@ -218,6 +219,7 @@ hr {
     border-radius: 10px;
     box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.9);
 }
+
 /* color box */
 #color-box {
     border: hidden;
@@ -318,7 +320,7 @@ hr {
 #hint-p {
     font-family: "Chakra Petch", sans-serif;
     color: white;
-    font-size:larger;
+    font-size: larger;
 }
 
 /* score text */
@@ -356,6 +358,12 @@ hr {
         margin: 20px;
     }
 
+    #user-name {
+        height: 50px;
+        font-size: xx-large;
+        width: 40%;
+    }
+
     #start-button {
         height: 60px;
         font-size: xx-large;
@@ -384,6 +392,10 @@ hr {
     #hexa-code-rolls {
         font-size: larger;
         margin-bottom: 30px;
+    }
+
+    #level-area {
+        margin-right: 70%;
     }
 
     #color-box {
@@ -425,6 +437,11 @@ hr {
         margin-bottom: 20px;
     }
 
+    #hint-button {
+        margin-left: 10%;
+        width: 20%;
+    }
+
     #score-text {
         float: right;
         font-size: xx-large;
@@ -433,7 +450,7 @@ hr {
 
 /* media query: larger devices laptop and desktop (992px and up) */
 @media screen and (min-width: 992px) {
-    
+
     #start-guess {
         margin-top: 20%;
     }
