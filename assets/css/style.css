@@ -388,6 +388,9 @@ body {
         float: inline-start;
     }
 
+    #user-name-t {
+        font-size: larger;
+    }
     #color-box {
         height: 220px;
         margin-left: auto;
