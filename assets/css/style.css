@@ -156,12 +156,6 @@ body {
     transition: 0.3s;
 }
 
-/* hr */
-hr {
-    border-color: #63bce5;
-    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.9);
-}
-
 /* level area */
 #level-area {
     height: 30px;
@@ -365,83 +359,83 @@ hr {
         margin-bottom: 10px;
         width: 20%;
     }
-}
 
-#game-area-heading {
-    font-size: xx-large;
-    padding: 20px;
-    width: fit-content;
-    margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
-}
 
-.game-area-p {
-    font-size: larger;
-    margin-bottom: 20px;
-}
+    #game-area-heading {
+        font-size: xx-large;
+        padding: 20px;
+        width: fit-content;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-#inst-heading {
-    margin-bottom: 20px;
-}
+    .game-area-p {
+        font-size: larger;
+        margin-bottom: 20px;
+    }
 
-#hexa-code-rolls {
-    font-size: larger;
-    margin-bottom: 30px;
-}
+    #inst-heading {
+        margin-bottom: 20px;
+    }
 
-#level-area {
-    margin-right: 70%;
-}
+    #hexa-code-rolls {
+        font-size: larger;
+        margin-bottom: 30px;
+    }
 
-#color-box {
-    height: 220px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 40px;
-}
+    #level-area {
+        float: inline-start;
+    }
 
-#guess-step {
-    font-size: medium;
-    margin-bottom: 10px;
-}
+    #color-box {
+        height: 220px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+    }
 
-#attempt-p {
-    font-size: medium;
-    margin-bottom: 15px;
-}
+    #guess-step {
+        font-size: medium;
+        margin-bottom: 10px;
+    }
 
-#guess-box {
-    height: 40px;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
+    #attempt-p {
+        font-size: medium;
+        margin-bottom: 15px;
+    }
 
-#validation-text {
-    font-size: medium;
-    margin-bottom: 20px;
-}
+    #guess-box {
+        height: 40px;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
 
-#submit {
-    float: left;
-    height: 40px;
-    font-size: x-large;
-    width: 15%;
-    padding: 5px;
-    margin-bottom: 20px;
-}
+    #validation-text {
+        font-size: medium;
+        margin-bottom: 20px;
+    }
 
-#hint-button {
-    margin-left: 10%;
-    width: 20%;
-}
+    #submit {
+        float: left;
+        height: 40px;
+        font-size: x-large;
+        width: 15%;
+        padding: 5px;
+        margin-bottom: 20px;
+    }
 
-#score-text {
-    float: right;
-    font-size: xx-large;
-}
+    #hint-button {
+        margin-left: 10%;
+        width: 20%;
+    }
+
+    #score-text {
+        float: right;
+        font-size: xx-large;
+    }
 }
 
 /* media query: larger devices laptop and desktop (992px and up) */
