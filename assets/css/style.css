@@ -237,7 +237,7 @@ hr {
 #validation-text {
     display: none;
     font-family: "Montserrat", sans-serif;
-    font-size: x-small;
+    font-size: xx-small;
     color: white;
     text-align: center;
     margin-top: 5px;
@@ -247,7 +247,7 @@ hr {
 /* guess step paragraph */
 #guess-step {
     font-family: "Montserrat", sans-serif;
-    font-size: small;
+    font-size: x-small;
     color: white;
     text-align: left;
     margin-bottom: 5px;
@@ -256,7 +256,7 @@ hr {
 /* attempt paragraph */
 #attempt-p {
     font-family: "Montserrat", sans-serif;
-    font-size: small;
+    font-size: xx-small;
     color: white;
     text-align: center;
     margin-bottom: 5px;
