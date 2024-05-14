@@ -388,6 +388,15 @@ body {
         float: inline-start;
     }
 
+    .levels {
+        height: 20px;
+        width: 20px;
+    }
+
+    .levels-text {
+        font-size: medium;
+    }
+
     #user-name-t {
         font-size: larger;
     }
