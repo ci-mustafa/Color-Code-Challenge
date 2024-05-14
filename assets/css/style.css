@@ -168,6 +168,7 @@ hr {
     margin-bottom: 10px;
     margin-top: 10px;
     display: inline-block;
+    margin-right: 45px;
 }
 
 .levels {
@@ -210,14 +211,11 @@ hr {
 /* display username */
 #user-name-t {
     font-family: "Chakra Petch", sans-serif;
-    display: inline-block;
     text-transform: capitalize;
-    font-size: xx-small;
-    margin-left: 40px;
-    border: solid;
-    padding: 2px;
-    border-color: cadetblue;
+    font-size: x-small;
+    float: inline-end;
     color: white;
+    margin-top: 10px;
     
 }
 
