@@ -163,13 +163,9 @@ hr {
 
 /* level area */
 #level-area {
-    background-color: black;
     height: 30px;
-    width: 170px;
     margin-bottom: 10px;
     margin-top: 10px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.9);
     display: inline-block;
 }
 
@@ -216,11 +212,9 @@ hr {
     color: #8d8d8d;
     display: inline-block;
     text-transform: capitalize;
-    font-size: large;
-    padding: 3px;
-    background-color: black;
-    border-radius: 10px;
-    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.9);
+    font-size: xx-small;
+    margin-left: 40px;
+    
 }
 
 /* color box */
