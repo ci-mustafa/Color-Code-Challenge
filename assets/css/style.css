@@ -209,11 +209,14 @@ hr {
 /* display username */
 #user-name-t {
     font-family: "Chakra Petch", sans-serif;
-    color: #8d8d8d;
     display: inline-block;
     text-transform: capitalize;
     font-size: xx-small;
     margin-left: 40px;
+    border: solid;
+    padding: 2px;
+    border-color: cadetblue;
+    color: white;
     
 }
 
