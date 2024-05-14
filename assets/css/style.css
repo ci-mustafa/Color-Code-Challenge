@@ -166,8 +166,8 @@ body {
 }
 
 .levels {
-    height: 20px;
-    width: 20px;
+    height: 10px;
+    width: 10px;
     display: inline-block;
     margin-right: 3px;
     margin-left: 3px;
@@ -195,7 +195,7 @@ body {
 
 .levels-text {
     font-family: "Chakra Petch", sans-serif;
-    font-size: small;
+    font-size: xx-small;
     color: white;
     font-weight: bold;
     display: inline-block;
