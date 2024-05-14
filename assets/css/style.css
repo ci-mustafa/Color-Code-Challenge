@@ -182,22 +182,25 @@ hr {
     margin-right: 3px;
     margin-left: 3px;
     margin-top: 5px;
+    background-size: 100% 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 #dimond {
-    background: linear-gradient(135deg, #d3d3d3, #eaeaea);
+    background-image: url("/assets/images/dimond.jpeg");
 }
 
 #gold {
-    background: linear-gradient(135deg, #f2c200, #c9b037);
+    background-image: url("/assets/images/gold.png");
 }
 
 #silver {
-    background: linear-gradient(135deg, #8d8d8d, #ffffff);
+    background-image: url("/assets/images/silver.png");
 }
 
 #bronze {
-    background: linear-gradient(135deg, #cd7f32, #b48f66);
+    background-image: url("/assets/images/bronze.png");
 }
 
 .levels-text {
