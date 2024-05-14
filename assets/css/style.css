@@ -99,7 +99,7 @@ body {
     text-align: left;
     margin-bottom: 10px;
     font-family: "Montserrat", sans-serif;
-    font-size: small;
+    font-size: xx-small;
     color: white;
 }
 
@@ -109,12 +109,13 @@ body {
     color: white;
     text-align: left;
     margin-bottom: 5px;
+    font-size: medium;
 }
 
 /* hexa code list rolls */
 #hexa-code-rolls {
     font-family: "Montserrat", sans-serif;
-    font-size: small;
+    font-size: xx-small;
     color: white;
     text-align: left;
     margin-bottom: 15px;
