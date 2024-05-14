@@ -208,6 +208,8 @@ hr {
     font-size: small;
     color: #222222;
     font-weight: bold;
+    display: inline-block;
+    text-align: center;
 }
 
 /* display username */
