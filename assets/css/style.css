@@ -355,8 +355,7 @@ hr {
     }
     #user-name {
         height: 30px;
-        font-size: small;
-        width: 15%;
+        font-size: x-large;
     }
 
     #start-button {
