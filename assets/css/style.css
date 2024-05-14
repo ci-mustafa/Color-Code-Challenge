@@ -184,19 +184,19 @@ hr {
 }
 
 #dimond {
-    background-image: url("/assets/images/dimond.png");
+    background-image: url("../images/dimond.png");
 }
 
 #gold {
-    background-image: url("/assets/images/gold.png");
+    background-image: url("../images/gold.png");
 }
 
 #silver {
-    background-image: url("/assets/images/silver.png");
+    background-image: url("../images/silver.png");
 }
 
 #bronze {
-    background-image: url("/assets/images/bronze.png");
+    background-image: url("../images/bronze.png");
 }
 
 .levels-text {
