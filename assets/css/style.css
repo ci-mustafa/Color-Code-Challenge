@@ -290,11 +290,11 @@ hr {
 /* submit button */
 #submit {
     font-family: "Chakra Petch", sans-serif;
-    font-size: larger;
+    font-size: x-small;
     margin-top: 5px;
     margin-bottom: 10px;
-    height: 30px;
-    width: 35%;
+    height: 25px;
+    width: 25%;
     background-color: #150734;
     color: aquamarine;
     border: hidden;
@@ -305,11 +305,11 @@ hr {
 /* Hint button */
 #hint-button {
     font-family: "Chakra Petch", sans-serif;
-    font-size: larger;
+    font-size: x-small;
     margin-top: 5px;
     margin-bottom: 10px;
-    height: 30px;
-    width: 35%;
+    height: 25px;
+    width: 25%;
     background-color: #150734;
     color: aquamarine;
     border: hidden;
