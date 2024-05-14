@@ -348,28 +348,24 @@ hr {
     }
 
     #start-guess {
-        width: fit-content;
-        height: fit-content;
-        margin: auto;
-        margin-top: 40%;
+        margin-top: 60px;
     }
 
     #start-heading {
-        font-size: 50px;
-        margin: 20px;
-    }
+        font: 40px;
 
+    }
     #user-name {
-        height: 50px;
-        font-size: xx-large;
-        width: 40%;
+        height: 30px;
+        font-size: small;
+        width: 15%;
     }
 
     #start-button {
-        height: 60px;
-        font-size: xx-large;
-        margin-bottom: 20px;
-        width: 150px;
+        height: 30px;
+        font-size: small;
+        margin-bottom: 10px;
+        width: 10%;
     }
 
     #game-area-heading {
