@@ -178,7 +178,7 @@ hr {
     margin-right: 3px;
     margin-left: 3px;
     margin-top: 5px;
-    background-size: 100% 100%; 
+    background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -216,7 +216,7 @@ hr {
     float: inline-end;
     color: white;
     margin-top: 10px;
-    
+
 }
 
 /* color box */
@@ -353,93 +353,95 @@ hr {
         font: 40px;
 
     }
+
     #user-name {
         height: 30px;
         font-size: x-large;
     }
 
     #start-button {
-        height: 30px;
-        font-size: small;
-        margin-bottom: 10px;
-        width: 10%;
-    }
-
-    #game-area-heading {
-        font-size: xx-large;
-        padding: 20px;
-        width: fit-content;
-        margin-bottom: 20px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .game-area-p {
-        font-size: larger;
-        margin-bottom: 20px;
-    }
-
-    #inst-heading {
-        margin-bottom: 20px;
-    }
-
-    #hexa-code-rolls {
-        font-size: larger;
-        margin-bottom: 30px;
-    }
-
-    #level-area {
-        margin-right: 70%;
-    }
-
-    #color-box {
-        height: 220px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 40px;
-    }
-
-    #guess-step {
-        font-size: medium;
-        margin-bottom: 10px;
-    }
-
-    #attempt-p {
-        font-size: medium;
-        margin-bottom: 15px;
-    }
-
-    #guess-box {
-        height: 40px;
-        width: 50%;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-    }
-
-    #validation-text {
-        font-size: medium;
-        margin-bottom: 20px;
-    }
-
-    #submit {
-        float: left;
         height: 40px;
         font-size: x-large;
-        width: 15%;
-        padding: 5px;
-        margin-bottom: 20px;
-    }
-
-    #hint-button {
-        margin-left: 10%;
+        margin-bottom: 10px;
         width: 20%;
     }
+}
 
-    #score-text {
-        float: right;
-        font-size: xx-large;
-    }
+#game-area-heading {
+    font-size: xx-large;
+    padding: 20px;
+    width: fit-content;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.game-area-p {
+    font-size: larger;
+    margin-bottom: 20px;
+}
+
+#inst-heading {
+    margin-bottom: 20px;
+}
+
+#hexa-code-rolls {
+    font-size: larger;
+    margin-bottom: 30px;
+}
+
+#level-area {
+    margin-right: 70%;
+}
+
+#color-box {
+    height: 220px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+#guess-step {
+    font-size: medium;
+    margin-bottom: 10px;
+}
+
+#attempt-p {
+    font-size: medium;
+    margin-bottom: 15px;
+}
+
+#guess-box {
+    height: 40px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#validation-text {
+    font-size: medium;
+    margin-bottom: 20px;
+}
+
+#submit {
+    float: left;
+    height: 40px;
+    font-size: x-large;
+    width: 15%;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+#hint-button {
+    margin-left: 10%;
+    width: 20%;
+}
+
+#score-text {
+    float: right;
+    font-size: xx-large;
+}
 }
 
 /* media query: larger devices laptop and desktop (992px and up) */
