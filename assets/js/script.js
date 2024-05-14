@@ -95,7 +95,7 @@ function increaseScore() {
     if (hintCounter === 0) {
         score += 4;
         dimondCounter += 1;
-        let dimondElement = document.getElementById("dimond");
+        let dimondElement = document.getElementById("dimond-text");
         let dimondElemetTextContent = dimondElement.textContent;
         let toInt = parseInt(dimondElemetTextContent)
         dimondElement.textContent = toInt += dimondCounter;
@@ -103,7 +103,7 @@ function increaseScore() {
     } else if (hintCounter === 1) {
         score += 3;
         goldCounter += 1;
-        let goldElement = document.getElementById("gold");
+        let goldElement = document.getElementById("gold-text");
         let goldElementTextContent = goldElement.textContent;
         let toInt = parseInt(goldElementTextContent)
         goldElement.textContent = toInt += goldCounter;
@@ -111,7 +111,7 @@ function increaseScore() {
     } else if (hintCounter === 2) {
         score += 2;
         silverCounter += 1;
-        let silverElement = document.getElementById("silver");
+        let silverElement = document.getElementById("silver-text");
         let silverElementTextContent = silverElement.textContent;
         let toInt = parseInt(silverElementTextContent);
         silverElement.textContent = toInt += silverCounter;
@@ -119,7 +119,7 @@ function increaseScore() {
     } else if (hintCounter === 3) {
         score += 1;
         bronzeCounter += 1;
-        let bronzeElement = document.getElementById("bronze");
+        let bronzeElement = document.getElementById("bronze-text");
         let bronzeElementTextContent = bronzeElement.textContent;
         let toInt = parseInt(bronzeElementTextContent);
         bronzeElement.textContent = toInt += bronzeCounter;
