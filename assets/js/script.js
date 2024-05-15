@@ -28,6 +28,10 @@ function startGame() {
     if (userName.length < userNameStartLength || userName.length > userNameEndLenght) {
         userNameText.textContent = "Username should be beteween 6 and 8 characters.";
     } else {
+        // get hint button
+        let hintButton = document.getElementById("hint-button");
+        // change the color of hint button to default
+        hintButton.style.color = "aquamarine";
         // show game area div
         document.getElementById("game-area").style.display = "block";
         // hide start screen
