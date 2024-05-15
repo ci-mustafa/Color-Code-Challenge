@@ -123,8 +123,8 @@ body {
     list-style-type: square;
 }
 
-/* The alert message box */
-#hint-message-box {
+/* The hint and info message box */
+#hint-message-box, #info-message-box {
     position: fixed;
     /* Position fixed to keep it overlayed */
     top: 50%;
@@ -155,6 +155,7 @@ body {
     cursor: pointer;
     transition: 0.3s;
 }
+
 
 /* level area */
 #level-area {

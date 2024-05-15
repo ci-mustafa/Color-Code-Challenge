@@ -180,6 +180,14 @@ function checkUserGuess() {
         // check user guess against generated color
         if (userGuess === generatedColor) {
             increaseScore(); // calling increaseScore function to increase score
+
+           let infoMessageBoxElement = document.getElementById("info-message-box");
+           infoMessageBoxElement.textContent = "Congratulations, you guessed right!";
+           infoMessageBoxElement.style.display = "block";
+           setTimeout(function() {
+            infoMessageBoxElement.style.display = "none";
+           }, 2000)
+
             startGame(); // generate a new color
             document.getElementById("guess-box").value = "";
 
