@@ -22,7 +22,9 @@
 </head>
 
 <body>
+    <!-- game section -->
     <section id="game-section">
+        <!-- start box with username acceptation -->
         <div id="start-guess">
             <h1 id="start-heading">Click Start To Guess Color</h1>
             <input type="text" id="user-name" required placeholder="Your name here...">
@@ -30,24 +32,32 @@
             <br>
             <button id="start-button">Start</button>
         </div>
+        <!-- game area -->
         <div id="game-area">
+            <!-- hint message box -->
             <div id="hint-message-box">
                 <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
                 <p id="message-box-text">This is a message box.</p>
             </div>
+            <!-- info message box -->
             <div id="info-message-box">
                 <p id="info-message-box-text">This is a message box.</p>
             </div>
+            <!-- game area heading -->
             <h1 id="game-area-heading">Welcome To Color Box Guessing!</h1>
             <br>
+            <!-- game area paragraph -->
             <p class="game-area-p">Can you guess the color of the box? Type in the hexadecimal color code and see if you
                 can get it right! Good luck!</p>
+            <!-- instruction heading -->
             <h2 id="inst-heading">Instruction:</h2>
+            <!-- instructions rolls -->
             <ul id="hexa-code-rolls">
                 <li>Ensure hexadecimal color codes start with '#'.</li>
                 <li>Hexadecimal color codes must be 7 characters in length, including the '#'.</li>
                 <li>A hexadecimal color code consists of numbers (0-9) and letters (a-f).</li>
             </ul>
+            <!-- achivement area -->
             <div id="level-area">
                 <div id="dimond" class="levels"></div>
                 <span id="dimond-text" class="levels-text">0</span>
@@ -58,23 +68,34 @@
                 <div id="bronze" class="levels"></div>
                 <span id="bronze-text" class="levels-text">0</span>
             </div>
+            <!-- display username on the screen -->
             <p id="user-name-t">User</p>
+            <!-- color box -->
             <div id="color-box">
-
             </div>
+            <!-- display information to the user about guess steps -->
             <p id="guess-step" class="hidden-p">Correct Guesses: Code at index of: <span id="index"></span> with value:
                 <span id="value"></span>
             </p>
+            <!-- attemps paragraph -->
             <p id="attempt-p" class="hidden-p">You have: <span id="attempt"></span> attempts.</p>
+            <!-- validation text -->
             <p id="validation-text"></p>
+            <!-- input box -->
             <input type="text" id="guess-box" required placeholder="Type Hexa color code...">
+            <!-- hint button -->
             <button id="hint-button">Hint</button>
+            <!-- display hints on screen -->
             <p class="hidden-p" id="hint-p"><span id="hint-value">------</span></p>
+            <!-- guess button -->
             <button id="submit">Guess</button>
+            <!-- reset button -->
             <button id="reset-button">Reset</button>
+            <!-- display score on screen -->
             <p id="score-text">Total Score: <span id="score">0</span></p>
         </div>
     </section>
+    <!-- js link -->
     <script src="assets/js/script.js"></script>
 </body>
 
