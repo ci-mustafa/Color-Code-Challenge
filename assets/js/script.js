@@ -332,7 +332,7 @@ document.getElementById("hint-button").addEventListener("click", function () {
         let hintButton = document.getElementById("hint-button");
         hintButton.disabled = true;
         hintButton.style.backgroundColor = "#CCCCCC";
-
+        hintButton.style.color = "black";
     }
 })
 
