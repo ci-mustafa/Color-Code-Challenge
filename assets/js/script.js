@@ -25,7 +25,7 @@ function startGame() {
     const userNameEndLenght = 8;
     let userName = document.getElementById("user-name").value;
     let userNameText = document.getElementById("user-name-validation-text");
-    if (  userName.length < userNameStartLength || userName.length > userNameEndLenght) {
+    if (userName.length < userNameStartLength || userName.length > userNameEndLenght) {
         userNameText.textContent = "Username should be beteween 6 and 8 characters.";
     } else {
         // show game area div
@@ -177,16 +177,19 @@ function checkUserGuess() {
         // change hint button color to default
         document.getElementById("hint-button").style.backgroundColor = "#150734";
 
+        // get info message box
+        let infoMessageBoxElement = document.getElementById("info-message-box");
+
         // check user guess against generated color
         if (userGuess === generatedColor) {
             increaseScore(); // calling increaseScore function to increase score
 
-           let infoMessageBoxElement = document.getElementById("info-message-box");
-           infoMessageBoxElement.textContent = "Congratulations, you guessed right!";
-           infoMessageBoxElement.style.display = "block";
-           setTimeout(function() {
-            infoMessageBoxElement.style.display = "none";
-           }, 2000)
+            // show a congrats message when a user guess the correct color code
+            infoMessageBoxElement.textContent = "Congratulations, you guessed right!";
+            infoMessageBoxElement.style.display = "block";
+            setTimeout(function () {
+                infoMessageBoxElement.style.display = "none";
+            }, 2000)
 
             startGame(); // generate a new color
             document.getElementById("guess-box").value = "";
@@ -201,6 +204,7 @@ function checkUserGuess() {
             // hide hint paragraph
             document.getElementById("hint-p").style.display = "none";
         } else {
+
             // if validateuserinput function return true perform decrement
             if (validateUserInput()) {
                 // attempt decrement
@@ -252,6 +256,12 @@ function checkUserGuess() {
                 pInfo.style.display = "none";
                 attemptPara.style.display = "none";
             } else {
+                // show a failed message when a user can not guess the correct color code
+                infoMessageBoxElement.textContent = "Oops! Incorrect guess! Try again.";
+                infoMessageBoxElement.style.display = "block";
+                setTimeout(function () {
+                    infoMessageBoxElement.style.display = "none";
+                }, 2000)
                 pInfo.style.display = "block";
                 attemptPara.style.display = "block";
             }
@@ -321,7 +331,7 @@ document.getElementById("hint-button").addEventListener("click", function () {
         // Disable hint button after all hints are used
         let hintButton = document.getElementById("hint-button");
         hintButton.disabled = true;
-        hintButton.style.backgroundColor = "#CCCCCC"
+        hintButton.style.backgroundColor = "#CCCCCC";
 
     }
 })
