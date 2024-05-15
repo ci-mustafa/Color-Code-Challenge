@@ -16,6 +16,80 @@ document.addEventListener("DOMContentLoaded", function () {
     startButton.addEventListener("click", startGame);
 });
 
+// create a variable to hold counter value
+let hintCounter = 0;
+// add click event listener to the hint button
+document.getElementById("hint-button").addEventListener("click", function () {
+
+    // display hint paragraph
+    document.getElementById("hint-p").style.display = "block";
+
+    // increament hint counter by every click
+    hintCounter++;
+    // get hint-value element
+    let hintTextContent = document.getElementById("hint-value");
+    // variable to store hint character
+    let hintChar;
+    // get message box text
+    let messageBoXPElement = document.getElementById("message-box-text");
+    // display hints based on hint counter
+    if (hintCounter === 1) {
+        // First hint: Show the first character of the color code
+        hintChar = generatedColor.slice(1, 2);
+        hintTextContent.textContent = hintChar + hintTextContent.textContent.slice(1);
+        messageBoXPElement.textContent = "First hint revealed! you have 2 hints left.";
+        showHintMessage();
+    } else if (hintCounter === 2) {
+        // Second hint: Show the last character of the color code
+        hintChar = generatedColor.slice(-1);
+        hintTextContent.textContent = hintTextContent.textContent.slice(0, 5) + hintChar;
+        messageBoXPElement.textContent = "Second hint revealed! you have 1 hints left.";
+        showHintMessage();
+    } else if (hintCounter === 3) {
+        // Third hint: Show the middle two characters of the color code
+        hintChar = generatedColor.slice(3, 5);
+        hintTextContent.textContent = hintTextContent.textContent.slice(0, 2) + hintChar + hintTextContent.textContent.slice(4);
+        messageBoXPElement.textContent = "Final hint revealed! Last chance to guess.";
+        showHintMessage();
+        // Disable hint button after all hints are used
+        let hintButton = document.getElementById("hint-button");
+        hintButton.disabled = true;
+        hintButton.style.backgroundColor = "#CCCCCC";
+        hintButton.style.color = "black";
+    }
+})
+
+// apply reset logic
+document.getElementById("reset-button").addEventListener("click", function () {
+    // make hintcounter to 0
+    hintCounter = 0;
+    // get hint button
+    let hintButton = document.getElementById("hint-button");
+    // make hint button disabled to false
+    hintButton.disabled = false;
+    // change the color and background color of hint button to default
+    hintButton.style.color = "aquamarine";
+    hintButton.style.backgroundColor = "#150734";
+    // generate new color
+    generatedColor = generateColor();
+    document.getElementById("color-box").style.backgroundColor = generatedColor;
+    console.log(generatedColor);
+    // make text content of hint value to default
+    document.getElementById("hint-value").textContent = "------";
+    // hide hint paragraph
+    document.getElementById("hint-p").style.display = "none";
+    // get guess box focuse on it and make it's value to empty
+    document.getElementById("guess-box").focus();
+    document.getElementById("guess-box").value = "";
+    // make attempt to default
+    attempts = 10;
+    // make attempt display to none
+    let attemptPara = document.getElementById("attempt-p");
+    attemptPara.style.display = "none";
+    // make guess step info to none
+    document.getElementById("guess-step").style.display = "none";
+
+})
 /**
  * Function to start the game and give the box a random color
  */
@@ -297,48 +371,7 @@ function checkUserGuess() {
         }
     });
 }
-// create a variable to hold counter value
-let hintCounter = 0;
-// add click event listener to the hint button
-document.getElementById("hint-button").addEventListener("click", function () {
 
-    // display hint paragraph
-    document.getElementById("hint-p").style.display = "block";
-
-    // increament hint counter by every click
-    hintCounter++;
-    // get hint-value element
-    let hintTextContent = document.getElementById("hint-value");
-    // variable to store hint character
-    let hintChar;
-    // get message box text
-    let messageBoXPElement = document.getElementById("message-box-text");
-    // display hints based on hint counter
-    if (hintCounter === 1) {
-        // First hint: Show the first character of the color code
-        hintChar = generatedColor.slice(1, 2);
-        hintTextContent.textContent = hintChar + hintTextContent.textContent.slice(1);
-        messageBoXPElement.textContent = "First hint revealed! you have 2 hints left.";
-        showHintMessage();
-    } else if (hintCounter === 2) {
-        // Second hint: Show the last character of the color code
-        hintChar = generatedColor.slice(-1);
-        hintTextContent.textContent = hintTextContent.textContent.slice(0, 5) + hintChar;
-        messageBoXPElement.textContent = "Second hint revealed! you have 1 hints left.";
-        showHintMessage();
-    } else if (hintCounter === 3) {
-        // Third hint: Show the middle two characters of the color code
-        hintChar = generatedColor.slice(3, 5);
-        hintTextContent.textContent = hintTextContent.textContent.slice(0, 2) + hintChar + hintTextContent.textContent.slice(4);
-        messageBoXPElement.textContent = "Final hint revealed! Last chance to guess.";
-        showHintMessage();
-        // Disable hint button after all hints are used
-        let hintButton = document.getElementById("hint-button");
-        hintButton.disabled = true;
-        hintButton.style.backgroundColor = "#CCCCCC";
-        hintButton.style.color = "black";
-    }
-})
 
 /**
  * Function to show and style hint message
