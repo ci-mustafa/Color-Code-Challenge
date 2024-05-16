@@ -34,5 +34,19 @@ This project offers a user-friendly experience:
 * Feedback after each challenge for improvement.
 * Accessibility features for all users.
 
+### User Stories
+
+ * First-time visitor goals
+    * Understand how to start guessing hex color codes.
+    * Enter a username to begin playing.
+    * Learn how to play the guessing game and achieve different levels of difficulty.
+ * Returning visitor goals
+    * Start playing immediately.
+    * View progress and total score.
+    * Challenge oneself with more difficult hex color codes.
+ * Frequent user goals
+    * Compete with other users for the highest score and enhance their hex color code knowledg.
+- - -
+
 
 
