@@ -252,9 +252,6 @@ function checkUserGuess() {
         // call validateuserinput function
         validateUserInput();
 
-        // change hint button color to default
-        document.getElementById("hint-button").style.backgroundColor = "#150734";
-
         // get info message box
         let infoMessageBoxElement = document.getElementById("info-message-box");
 
@@ -359,6 +356,9 @@ function checkUserGuess() {
                 // Renew hint process and enable hint button
                 hintCounter = 0;
                 document.getElementById("hint-button").disabled = false;
+                // change hint button color to default
+                document.getElementById("hint-button").style.backgroundColor = "#150734";
+                
 
                 // make text content of hint value to default
                 document.getElementById("hint-value").textContent = "------";
