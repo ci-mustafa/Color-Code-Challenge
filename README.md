@@ -24,5 +24,15 @@ Color Code Challenge is an online platform designed for programmers and designer
 ### [Credits](#credits-1)
 ### [Acknowledgements](#acknowledgements-1)
 ---
+## User Experience (UX)
+This project offers a user-friendly experience:
+* Intuitive interface for easy navigation.
+* Clear instructions for challenge.
+* Interactive learning through practice.
+* Progress tracking to monitor achievements.
+* Responsive design for seamless use on all devices.
+* Feedback after each challenge for improvement.
+* Accessibility features for all users.
+
 
 
