@@ -450,7 +450,7 @@ body {
         color: #150734;
     }
 
-    #submit:hover, #hint-button:hover, #reset-button:hover {
+    #submit:hover, #reset-button:hover {
         background-color: #7ed5ea;
         color: #150734;
     }

@@ -70,16 +70,6 @@ document.getElementById("reset-button").addEventListener("click", function () {
     // change the color and background color of hint button to default
     hintButton.style.color = "aquamarine";
     hintButton.style.backgroundColor = "#150734";
-    // add mouseover event listener on hint button
-    hintButton.addEventListener("mouseover", function () {
-        hintButton.style.backgroundColor = "#7ed5ea";
-        hintButton.style.color = "#150734";
-    })
-    // add mouseleave envent listener on hint button
-    hintButton.addEventListener("mouseleave", function () {
-        hintButton.style.color = "aquamarine";
-        hintButton.style.backgroundColor = "#150734";
-    })
     // generate new color
     generatedColor = generateColor();
     document.getElementById("color-box").style.backgroundColor = generatedColor;
