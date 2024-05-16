@@ -349,6 +349,18 @@ function checkUserGuess() {
                 // if attempts is 0 and userGuess is equal to generatedColor, increase score and call startGame function
                 if (userGuess === generatedColor) {
                     increaseScore();
+                } else if (userGuess !== generatedColor) {
+                    // if attempts is 0 and userGuess is not equal to generetedColor, decrease total score by 1 and
+                    // show a message to the user
+                    let scoreElement = document.getElementById("score");
+                    let score = parseInt(scoreElement.textContent);
+                    score -= 1;
+                    scoreElement.textContent = score;
+                    infoMessageBoxElement.textContent = "Sorry, you've used all your attempts and couldn't guess correctly. Score decreased by 1.";
+                    infoMessageBoxElement.style.display = "block";
+                    setTimeout(function () {
+                        infoMessageBoxElement.style.display = "none";
+                    }, 3000)
                 }
                 // Call startGame if attempts are 0, regardless of user's guess
                 startGame();
@@ -359,7 +371,7 @@ function checkUserGuess() {
                 document.getElementById("hint-button").disabled = false;
                 // change hint button color to default
                 document.getElementById("hint-button").style.backgroundColor = "#150734";
-                
+
 
                 // make text content of hint value to default
                 document.getElementById("hint-value").textContent = "------";
