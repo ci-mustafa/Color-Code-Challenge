@@ -273,6 +273,9 @@ function checkUserGuess() {
             hintCounter = 0;
             document.getElementById("hint-button").disabled = false;
 
+            // change hint button color to default
+            document.getElementById("hint-button").style.backgroundColor = "#150734";
+
             // make text content of hint value to default
             document.getElementById("hint-value").textContent = "------";
 
@@ -349,8 +352,6 @@ function checkUserGuess() {
                 }
                 // Call startGame if attempts are 0, regardless of user's guess
                 startGame();
-                let scoreElement = document.getElementById("score");
-                scoreElement.textContent = 0;
                 document.getElementById("guess-box").value = "";
 
                 // Renew hint process and enable hint button
