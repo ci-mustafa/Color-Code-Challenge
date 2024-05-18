@@ -73,7 +73,6 @@ document.getElementById("reset-button").addEventListener("click", function () {
     // generate new color
     generatedColor = generateColor();
     document.getElementById("color-box").style.backgroundColor = generatedColor;
-    console.log(generatedColor);
     // make text content of hint value to default
     document.getElementById("hint-value").textContent = "------";
     // hide hint paragraph
@@ -116,7 +115,6 @@ function startGame() {
         // generate a random color
         generatedColor = generateColor();
         document.getElementById("color-box").style.backgroundColor = generatedColor;
-        console.log(generatedColor);
         // get guess box and focus on it
         document.getElementById("guess-box").focus();
         // access guess-step paragraph and attemp-p paragraph
