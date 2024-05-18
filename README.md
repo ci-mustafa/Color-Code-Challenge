@@ -246,3 +246,25 @@ By forking the repository, we make a copy of the original repository on our GitH
 7. Press Enter and your local clone will be created.
 
 ---
+
+## Credits
+
+### Code
+
+   * Enhance understanding of the concept of display properties, such as "block" or "none," by exploring examples on https://www.w3schools.com.
+   * The README template was helpfully provided by [Code Institute (template)](https://github.com/Code-Institute-Solutions/SampleREADME)
+
+### Content
+
+   * All content was written by the developer.
+
+### Media 
+
+   * [Pngtree](https://pngtree.com/) free achievement png photos.
+
+---
+
+## Acknowledgements
+
+   * My mentor, Mitko Bachvarov, offered valuable feedback, guiding the project's concept and suggesting resources like JSFiddle for code validation and performance checking, as well as Am I Responsive for assessing website responsiveness.
+   * Slack community for encouragement and information.
