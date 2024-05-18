@@ -195,3 +195,22 @@ This project offers a user-friendly experience:
    * Family and friends were asked to review the website for a better understanding of the user experience.
    * Dev Tools was used to test how the site looks on various screen sizes.
 
+### Lighthouse Report
+
+#### Mobile analysis
+<details>
+<summary>Report
+</summary>
+
+![Mobile lighthouse report](/assets/images/color-code-ch-mobile.png)
+</details>
+
+#### Desktop analysis
+<details>
+<summary>Report
+</summary>
+
+![Desktop lighthouse report](/assets/images/color-code-ch-desktop.png)
+</details>
+
+---
