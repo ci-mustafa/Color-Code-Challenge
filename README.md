@@ -76,5 +76,52 @@ This project offers a user-friendly experience:
    * Reset Functionality: Users can reset the color and hint process at any time.
    * Responsive Design: The website is designed to be fully responsive, providing an optimal experience on devices of all sizes.
 
+### Existing Features
+
+   * Start Screen 
+      * Start screen and username acceptance.
+      * Validation rules for username acceptance.
+      ![Start Screen](assets/images/start-screen.png)
+   
+   * Main Screen
+      * Color Code Guessing Instructions: Clear instructions are provided for users to guess hex color codes.
+      * Achievements: Users can earn different achievements based on their performance.
+      * Automatic Color Generation: A new color is automatically generated when the page loads for the first time, when the reset button is clicked, and when guess attempts reach zero.
+      * Username Display: The entered username is displayed on the screen throughout the session.
+      * Color Code Guessing Input: An input box is available for users to enter their color code guesses, with validation to ensure correct format.
+      * Reset Button: Users have the ability to reset the color and hint process at any time with the reset button.
+      * Hint Functionality: Hints are available to assist users in guessing the correct color code.
+      * Score Display: The total score is displayed on the screen, updated in real-time based on the user's performance.
+      ![Guess Screen](assets/images/guess-screen.png)
+
+   * Feedback To User
+
+      * Clear message boxes provide responses to user actions, ensuring they receive immediate and understandable feedback.
+      ![Message Box](assets/images/message-box-show.png)
+      ![Message Box](assets/images/message-box-show1.png)
+      ![Message Box](assets/images/message-box-show2.png)
+      ![Hint Message Box](assets/images/hint-proccess.png)
+   
+   * Achievement Process and Score Management
+
+      * **No Hints Used**
+         * Score Increase: 4 points
+         * Achievement: Diamond
+         ![Diamond Achievement](assets/images/diamond.png)
+      * **One Hint Used**: 
+         * Score Increase: 3 points
+         * Achievement: Gold Cup
+         ![Gold Achievement](assets/images/goldd.png)
+      * **Two Hints Used**: 
+         * Score Increase: 2 points
+         * Achievement: Silver Cup
+         ![Silver Achievement](assets/images/silverr.png)
+      * **Three Hints Used**: 
+         * Score Increase: 1 point
+         * Achievement: Bronze Cup
+         ![Bronze Achievement](assets/images/bronzee.png)
+      * **Incorrect Guess**: 
+         * Score Decrease: 1 point when attempts reach zero
+
 
 
