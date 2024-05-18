@@ -131,5 +131,13 @@ This project offers a user-friendly experience:
       * **Incorrect Guess** 
          * Score Decrease: 1 point when attempts reach zero
 
+---
+
+## Features Left to Implement
+
+   * **Switch Between Hex and RGB Color Codes:** Add the ability for users to switch their guessing mode from hex color codes to RGB color codes.
+   * **User Registration and Login:** In the future, implement a registration and login system where users can create accounts with unique usernames and passwords.
+   * **Database Integration:** Save user scores and achievements to a database, allowing for persistent storage and retrieval of user information.
+
 
 
