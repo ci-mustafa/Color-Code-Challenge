@@ -25,47 +25,56 @@ Color Code Challenge is an online platform designed for programmers and designer
 ### [Acknowledgements](#acknowledgements-1)
 ---
 ## User Experience (UX)
+
 This project offers a user-friendly experience:
-* Intuitive interface for easy navigation.
-* Clear instructions for challenge.
-* Interactive learning through practice.
-* Progress tracking to monitor achievements.
-* Responsive design for seamless use on all devices.
-* Feedback after each challenge for improvement.
-* Accessibility features for all users.
+   * Intuitive interface for easy navigation.
+   * Clear instructions for challenge.
+   * Interactive learning through practice.
+   * Progress tracking to monitor achievements.
+   * Responsive design for seamless use on all devices.
+   * Feedback after each challenge for improvement.
+   * Accessibility features for all users.
 
 ### User Stories
 
- * First-time visitor goals
-    * Understand how to start guessing hex color codes.
-    * Enter a username to begin playing.
-    * Learn how to play the guessing game and achieve different levels of difficulty.
- * Returning visitor goals
-    * Start playing immediately.
-    * View progress and total score.
-    * Challenge oneself with more difficult hex color codes.
- * Frequent user goals
-    * Compete with other users for the highest score and enhance their hex color code knowledg.
+   * First-time visitor goals
+      * Understand how to start guessing hex color codes.
+      * Enter a username to begin playing.
+      * Learn how to play the guessing game and achieve different levels of difficulty.
+   * Returning visitor goals
+      * Start playing immediately.
+      * View progress and total score.
+      * Challenge oneself with more difficult hex color codes.
+   * Frequent user goals
+      * Compete with other users for the highest score and enhance their hex color code knowledg.
 - - -
 ## Design
 
- * Color Scheme
-    * Primary colors used on the website:
-      * #3F6844;
-      * #63BCE5;
-      * #0F2557;
-      * #150734;
-      * #7FFFD4;
-      * #FFFFFF;
-      * #000000;
+   * Color Scheme
+      * Primary colors used on the website:
+         * #3F6844;
+         * #63BCE5;
+         * #0F2557;
+         * #150734;
+         * #7FFFD4;
+         * #FFFFFF;
+         * #000000;
 
-   ![Color Scheme](/assets/images/colors.png)
+      ![Color Scheme](/assets/images/colors.png)
 
- * Typography
-    * Chakra Petch font is employed for headings, buttons and score , while Montserrat serves as the primary font for the website.
-    * sans-serif as their fallback font
+   * Typography
+      * Chakra Petch font is employed for headings, buttons and score , while Montserrat serves as the primary font for the website.
+      * sans-serif as their fallback font
 
 ---
+## Features
+
+   * Username Input: Users can enter their username to personalize their experience.
+   * Color Code Guessing: Users can guess hex color codes, enhancing their color recognition skills.
+   * Score Tracking: Scores are increased based on the accuracy of guesses, with or without hints.
+   * Achievements: Users can achieve different milestones and unlock special rewards.
+   * Reset Functionality: Users can reset the color and hint process at any time.
+   * Responsive Design: The website is designed to be fully responsive, providing an optimal experience on devices of all sizes.
 
 
 
