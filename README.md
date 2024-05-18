@@ -49,7 +49,7 @@ This project offers a user-friendly experience:
 - - -
 ## Design
 
- * Colour Scheme
+ * Color Scheme
     * Primary colors used on the website:
       * #3F6844;
       * #63BCE5;
