@@ -107,20 +107,28 @@ This project offers a user-friendly experience:
       * **No Hints Used**
          * Score Increase: 4 points
          * Achievement: Diamond
-         ![Diamond Achievement](assets/images/diamond.png)
-      * **One Hint Used**: 
+
+      ![Diamond Achievement](assets/images/diamond.png)
+
+      * **One Hint Used** 
          * Score Increase: 3 points
          * Achievement: Gold Cup
-         ![Gold Achievement](assets/images/goldd.png)
-      * **Two Hints Used**: 
+
+      ![Gold Achievement](assets/images/goldd.png)
+      * **Two Hints Used** 
+
          * Score Increase: 2 points
          * Achievement: Silver Cup
-         ![Silver Achievement](assets/images/silverr.png)
-      * **Three Hints Used**: 
+
+      ![Silver Achievement](assets/images/silverr.png)
+
+      * **Three Hints Used** 
          * Score Increase: 1 point
          * Achievement: Bronze Cup
-         ![Bronze Achievement](assets/images/bronzee.png)
-      * **Incorrect Guess**: 
+
+      ![Bronze Achievement](assets/images/bronzee.png)
+
+      * **Incorrect Guess** 
          * Score Decrease: 1 point when attempts reach zero
 
 
