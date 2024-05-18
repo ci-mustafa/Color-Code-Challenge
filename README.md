@@ -47,6 +47,25 @@ This project offers a user-friendly experience:
  * Frequent user goals
     * Compete with other users for the highest score and enhance their hex color code knowledg.
 - - -
+## Design
+
+ * Colour Scheme
+    * Primary colors used on the website:
+      * #3F6844;
+      * #63BCE5;
+      * #0F2557;
+      * #150734;
+      * #7FFFD4;
+      * #FFFFFF;
+      * #000000;
+
+   ![Color Scheme](/assets/images/colors.png)
+
+ * Typography
+    * Chakra Petch font is employed for headings, buttons and score , while Montserrat serves as the primary font for the website.
+    * sans-serif as their fallback font
+
+---
 
 
 
