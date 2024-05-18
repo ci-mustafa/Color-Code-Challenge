@@ -139,5 +139,27 @@ This project offers a user-friendly experience:
    * **User Registration and Login:** In the future, implement a registration and login system where users can create accounts with unique usernames and passwords.
    * **Database Integration:** Save user scores and achievements to a database, allowing for persistent storage and retrieval of user information.
 
+## Technologies Used
 
+ * [HTML5](https://en.wikipedia.org/wiki/HTML5)
+ * [CSS](https://en.wikipedia.org/wiki/CSS)
+ * [Javascript](https://en.wikipedia.org/wiki/JavaScript)
+
+---
+
+## Programs & Techs Used
+   * [Codeanywhere](https://codeanywhere.com/)
+      * To write the code.
+   * [Gitpod](https://www.gitpod.io/)
+      * To write the code.
+   * [Git](https://git-scm.com/)
+      * For vesion control.
+   * [Github](https://github.com/)
+      * Deployment of the website and storing the files online.
+   * [Google Fonts](https://fonts.google.com/)
+      * Import main font the website.
+   * [Am I Responsive](https://ui.dev/amiresponsive)
+      * Mockup picture for the README file.
+
+---
 
