@@ -163,3 +163,35 @@ This project offers a user-friendly experience:
 
 ---
 
+## Testing
+
+   * The W3C Markup Validator and W3C CSS Validator services were used to validate HTML and CSS files of the project to ensure there were no errors.
+
+      * [W3C Markup Validtor](https://validator.w3.org/)
+      * [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
+
+   * Utilize https://jsfiddle.net/ to validate and verify the functionality of JavaScript code for accuracy.
+
+### Validation results
+
+<details>
+<summary>index.html
+</summary>
+
+![Home Page validation result](/assets/images/html-validation-result.png)
+</details>
+
+<details>
+<summary>style.css
+</summary>
+
+![Home Page validation result](/assets/images/css-validation-result.png)
+</details>
+
+### Manual Testing
+
+   * The website was tested on Google Chrome and Microsoft Edge browsers.
+   * The website was viewed on a desktop computer, laptop, Samsung Galaxy A13 mobile phone and iphone 14 promax.
+   * Family and friends were asked to review the website for a better understanding of the user experience.
+   * Dev Tools was used to test how the site looks on various screen sizes.
+
